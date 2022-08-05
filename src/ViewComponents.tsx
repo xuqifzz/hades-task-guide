@@ -4,13 +4,12 @@ import { FromSaveFileResult } from './lib/HadesSaveFile';
 import { Link } from 'react-router-dom'
 import SaveData from './data/SaveData';
 import {translateWord} from './data/GameData'
-import { markAsUntransferable } from 'worker_threads';
 
 function createSaveData(r:FromSaveFileResult){
     return r.saveData ? new SaveData(r.saveData.luaState) : undefined
 }
 
-export  function TextLineLable({id,noLink,text} : {id:string,noLink ?: boolean,text ?:string}) {
+export  function TextLineLabel({id,noLink,text} : {id:string,noLink ?: boolean,text ?:string}) {
     const saveData = createSaveData(useContext(SaveDataContext));   
     const mark = saveData?.checkTextLineComplete(id) ? " [已完成]" : undefined;
     text = text || id;
@@ -81,23 +80,6 @@ export function TextRow({text, remarkFun}:TextRowProps) {
 }
 
 
-export  function NpcInteractionLabel({id,times} : {id:string,times : number}) {
-    const saveData = createSaveData(useContext(SaveDataContext));   
-
-    const count = saveData?.getGameStateValue<number>("NPCInteractions",id) || 0;
-   
-    let mark = "";
-    if(count > 0) mark = ` [当前交互次数: ${count} ]`;
-
-
-    return (
-        <span>
-            <Link to={"/Gifts/" + id} >{translateWord(id)}</Link> : {times} 
-           {mark}
-        </span>
-    )
-}
-
 export  function TraitHasTakenLabel({id} : {id:string}) {
     const saveData = createSaveData(useContext(SaveDataContext));   
     const hasTaken = saveData?.getGameStateValue<boolean>("TraitsTaken",id) || false;  
@@ -122,11 +104,12 @@ export  function WeaponsUnlokedLabel({id} : {id:string}) {
     )
 }
 
-export function TextLable({id,mark,linkPrefix} : {id:string,mark:(saveData:SaveData)=>string,linkPrefix ?: string}){
+export function TextLabel({id,attachDescription, mark,linkPrefix} : {id:string,attachDescription ?:string,  mark:(saveData:SaveData)=>string,linkPrefix ?: string}){
     const saveData = createSaveData(useContext(SaveDataContext));  
     let m = saveData ? mark(saveData) : ""; 
     return <span>
-           { linkPrefix ?   (<Link to={linkPrefix + id} >{translateWord(id)}</Link>) :(<span>{translateWord(id)}</span>)}         
+           { linkPrefix ?   (<Link to={linkPrefix + id} >{translateWord(id)}</Link>) :(<span>{translateWord(id)}</span>)}   
+           {attachDescription}      
            {m}
     </span>;
     

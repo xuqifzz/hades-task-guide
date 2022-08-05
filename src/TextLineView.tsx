@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getTextLine, getCueTextList,getChoiceInfo, CueText, ChoiceInfo} from './data/GameData'
 import GameStateEligibleView from './GameStateEligibleView'
 import JsonView from './JsonView'
-import { TextLineLable } from './ViewComponents'
+import { TextLineLabel } from './ViewComponents'
 
 function CueTextListView({ cueTextList}:{cueTextList:CueText[]}){
     return <div>
@@ -19,7 +19,7 @@ function ChoiceInfoView({choiceInfoList}:{choiceInfoList:ChoiceInfo[]}){
     return <div>
     <h3>选择</h3>
     <ul>
-        {choiceInfoList.map(c=><li key={c.id}>{c.text} <TextLineLable id={c.fullId} noLink={true} />  </li>)}
+        {choiceInfoList.map(c=><li key={c.id}>{c.text} <TextLineLabel id={c.fullId} noLink={true} />  </li>)}
     </ul>
 
 </div> 
@@ -46,7 +46,7 @@ export default function TextLineView() {
  
     return (
         <div>
-            <h2>对话ID: <TextLineLable id={id} noLink  /> </h2>
+            <h2>对话ID: <TextLineLabel id={id} noLink  /> </h2>
             <CueTextListView cueTextList={getCueTextList(textLine)} />
             { choiceInfoList ? <ChoiceInfoView choiceInfoList={choiceInfoList} /> : undefined}
            

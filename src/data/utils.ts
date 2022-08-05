@@ -23,6 +23,13 @@ export function Dict2Array<T>(dict:Dict<T>){
     return result;
 }
 
+export function dictLength<T>(d:Dict<T>){
+    let count = 0;
+    for(let k in d){
+        count++;
+    }
+    return count;
+}
 
 export function removeFormatSymbol(s:string){
     if(!s) return "";

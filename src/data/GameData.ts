@@ -49,7 +49,43 @@ ResourceOrderData.forEach(r => {
         HelpTextDict[r] = HelpTextDict[r2]
     }
 })
-
+const mirrorKeyWords = [
+    "MoveSpeed",
+	"HealthDrop",
+	"RareBoonChance",
+	"EpicBoonChance",
+	"Reroll",
+	"DashCharges",
+	"DashAttack",
+	"EffectVulnerability",
+	"AmmoVulnerability",
+	"ExtraChance",
+	"ExtraChanceAlt",
+	"ExtraChanceChaos",
+	"Rally",
+	"AmmoSupply",
+	"SneakAttack",
+	"StartingHealth",
+	"StartingMoney",
+	"HealthEncounterEndRegen",
+	"DoorHeal",
+	
+	"AlphaAttack",
+	"DarknessHeal",
+	"ExtraChanceWrath",
+	"ExtraChanceReplenish",
+	"PerfectDash",
+	"UnstoredAmmoVulnerability",
+	"AmmoReload",
+	"InterestMoney",
+	"HighHealthDamage",
+	"GodEnhancement",
+	"DuoRarityBoonChance",
+	"RunRewardBonusChance",
+	"StoredAmmoSlow",
+	"HeroicBoonChance",
+	"RerollPanel"
+]
 const shrineKeyWords=[
     "DarknessCap",
 	"HealingReduction",
@@ -77,6 +113,11 @@ shrineKeyWords.forEach(k=>{
         HelpTextDict[k+"ShrineUpgrade"] = HelpTextDict[k]
     }
 })
+mirrorKeyWords.forEach(k=>{
+    if(HelpTextDict[k] ){
+        HelpTextDict[k+"MetaUpgrade"] = HelpTextDict[k]
+    }
+})
 HelpTextDict["MetaUpgradeStrikeThroughShrineUpgrade"] = HelpTextDict["DarknessCap"]
 
 export function translateWord(word: string): string {
@@ -101,7 +142,14 @@ export interface GameStateEligible {
     RequiredClearsWithWeapons ?:{Names:string[]}
     RequiredMinUnlockedWeaponEnchantments ?: number,
     RequiredTrueFlags ?: string[],
-    RequiredClearedWithMetaUpgrades ?: string[]
+    RequiredFalseFlags ? : string[],
+    RequiredClearedWithMetaUpgrades ?: string[],
+    RequiredEliteAttributeKills ?: Dict<number>,
+    RequiredSeenRooms ?: string[],
+    RequiredKills ?: Dict<number>,
+    RequiredNumCosmeticsMin ?: number,
+    RequiredCodexEntriesMin ?: number,
+    RequiredMinItemInteractions ?: Dict<number>,
  
 }
 
