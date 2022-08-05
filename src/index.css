@@ -5,9 +5,83 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ccc;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-container{
+  margin: 20px auto;
+  width: 1100px;
+  background-color: #fff;
+  padding: 20px 10px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+a:link,a:visited{
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.json-container{
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #302a38;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 10px 30px, rgba(0, 0, 0, 0.15) 0 2px 5px; 
+}
+
+.json-container .react-json-view {
+  /* overflow-x: scroll; */
+  padding: 30px;
+  filter: grayscale(100%);
+  background: none !important;
+}
+
+
+.index-list {
+  display:flex;
+}
+
+.index-list-col{
+  flex-grow:1;
+}
+
+.file-upload-button {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.file-upload-button:hover {
+  background: #ddd;
+}
+
+a.logo-text{
+  font-size: 3rem;
+  color: black;
+  margin-right: 30px;
+}
+
+.logo-title-block{
+  margin-bottom: 10px;
+}
+
+
+
+

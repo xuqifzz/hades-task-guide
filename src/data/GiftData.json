@@ -1,0 +1,793 @@
+{
+    "DionysusUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Dionysus_Max",
+        "1": {
+            "Gift": "ForceDionysusBoonTrait"
+        },
+        "Name": "DionysusUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "DionysusGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DionysusAboutAmbrosia03"
+            ]
+        },
+        "MaxedSticker": "Keepsake_DionysusSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "ZeusUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Zeus_Max",
+        "1": {
+            "Gift": "ForceZeusBoonTrait"
+        },
+        "Name": "ZeusUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "ZeusGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusAboutRumors01"
+            ]
+        },
+        "MaxedSticker": "Keepsake_ZeusSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Thanatos_01": {
+        "Maximum": 10,
+        "MaxedIcon": "Keepsake_Thanatos_Max",
+        "1": {
+            "Gift": "PerfectClearDamageBonusTrait"
+        },
+        "MaxedSticker": "Keepsake_ThanatosSticker_Max",
+        "Name": "NPC_Thanatos_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "ThanatosGift10"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "10": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ThanatosFieldBuildingTrust01"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "ThanatosAssistTrait",
+            "HeartDividerAfter": true
+        },
+        "Locked": 7
+    },
+    "DefaultGodGiftData": {
+        "Maximum": 7,
+        "Locked": 5,
+        "Value": 0,
+        "Name": "DefaultGodGiftData"
+    },
+    "NPC_Skelly_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Skelly_Max",
+        "1": {
+            "Gift": "ReincarnationTrait"
+        },
+        "Name": "NPC_Skelly_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "SkellyGift09"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_SkellySticker_Max",
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "SkellyTrueDeathQuestComplete"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "SkellyAssistTrait"
+        },
+        "Locked": 7
+    },
+    "DefaultGiftData": {
+        "Maximum": 8,
+        "Locked": 5,
+        "Value": 0,
+        "Name": "DefaultGiftData"
+    },
+    "NPC_Dusa_01": {
+        "Maximum": 10,
+        "MaxedIcon": "Keepsake_Dusa_Max",
+        "1": {
+            "Gift": "LifeOnUrnTrait"
+        },
+        "MaxedSticker": "Keepsake_DusaSticker_Max",
+        "Name": "NPC_Dusa_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "BecameCloseWithDusa01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "10": {
+            "RequiredResource": "SuperGiftPoints",
+            "RequiredResourceAmount": 4
+        },
+        "9": {
+            "RequiredResource": "SuperGiftPoints",
+            "RequiredResourceAmount": 3
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DusaLoungeRenovationQuestComplete"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints",
+            "RequiredResourceAmount": 2
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "DusaAssistTrait",
+            "HeartDividerAfter": true
+        },
+        "Locked": 7
+    },
+    "TrialUpgrade": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Chaos_Max",
+        "1": {
+            "Gift": "ChaosBoonTrait"
+        },
+        "Name": "TrialUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "ChaosGift08"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "MaxedSticker": "Keepsake_ChaosSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ChaosAboutNyx06"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "HermesUpgrade": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Hermes_Max",
+        "1": {
+            "Gift": "FastClearDodgeBonusTrait"
+        },
+        "Name": "HermesUpgrade",
+        "MaxedRequirement": {
+            "RequiredAnyTextLines": [
+                "HermesGift08",
+                "HermesGift08B"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "MaxedSticker": "Keepsake_HermesSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HermesAboutPlume02"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Patroclus_01": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Patroclus_Max",
+        "1": {
+            "Gift": "ShieldAfterHitTrait"
+        },
+        "Name": "NPC_Patroclus_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "PatroclusGift08_A"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_PatroclusSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PatroclusWithAchilles01"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Charon_01": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Charon_Max",
+        "1": {
+            "Gift": "ShopDurationTrait"
+        },
+        "Name": "NPC_Charon_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "CharonGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "CharonAboutCustomerLoyalty01"
+            ]
+        },
+        "MaxedSticker": "Keepsake_CharonSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Hypnos_01": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Hypnos_Max",
+        "1": {
+            "Gift": "BonusMoneyTrait"
+        },
+        "Name": "NPC_Hypnos_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "HypnosGift08"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_HypnosSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HypnosAboutThanatos04"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "AresUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Ares_Max",
+        "1": {
+            "Gift": "ForceAresBoonTrait"
+        },
+        "Name": "AresUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "AresGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AresKillQuestAftermath01"
+            ]
+        },
+        "MaxedSticker": "Keepsake_AresSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Orpheus_01": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Orpheus_Max",
+        "1": {
+            "Gift": "DistanceDamageTrait"
+        },
+        "Name": "NPC_Orpheus_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "OrpheusGift08"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_OrpheusSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "OrpheusAboutSingersReunionQuest01"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Nyx_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Nyx_Max",
+        "1": {
+            "Gift": "BackstabAlphaStrikeTrait"
+        },
+        "Name": "NPC_Nyx_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "NyxGift09"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_NyxSticker_Max",
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "NyxChaosReunionQuestComplete"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "ArtemisUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Artemis_Max",
+        "1": {
+            "Gift": "ForceArtemisBoonTrait"
+        },
+        "Name": "ArtemisUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "ArtemisGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ArtemisAboutCallisto07"
+            ]
+        },
+        "MaxedSticker": "Keepsake_ArtemisSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "AphroditeUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Aphrodite_Max",
+        "1": {
+            "Gift": "ForceAphroditeBoonTrait"
+        },
+        "Name": "AphroditeUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "AphroditeGift06",
+                "AphroditeGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AphroditeAboutLove02"
+            ]
+        },
+        "MaxedSticker": "Keepsake_AphroditeSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Cerberus_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Cerberus_Max",
+        "1": {
+            "Gift": "MaxHealthKeepsakeTrait"
+        },
+        "MaxedSticker": "Keepsake_CerberusSticker_Max",
+        "Name": "NPC_Cerberus_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "CerberusGift09"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "Value": 0,
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "TrackUnlockedBlockInput": true,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "CerberusAboutBeingBestBoy01"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "PoseidonUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Poseidon_Max",
+        "1": {
+            "Gift": "ForcePoseidonBoonTrait"
+        },
+        "Name": "PoseidonUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "PoseidonGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonAboutFishing03"
+            ]
+        },
+        "MaxedSticker": "Keepsake_PoseidonSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Eurydice_01": {
+        "Maximum": 8,
+        "MaxedIcon": "Keepsake_Eurydice_Max",
+        "1": {
+            "Gift": "ShieldBossTrait"
+        },
+        "Name": "NPC_Eurydice_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "EurydiceGift08"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_EurydiceSticker_Max",
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "EurydiceAboutSingersReunionQuestComplete01"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_FurySister_01": {
+        "Maximum": 10,
+        "MaxedIcon": "Keepsake_Meg_Max",
+        "1": {
+            "Gift": "LowHealthDamageTrait"
+        },
+        "MaxedSticker": "Keepsake_MegSticker_Max",
+        "Name": "NPC_FurySister_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "MegaeraGift10"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "10": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredAnyTextLines": [
+                "MegaeraBedroom02",
+                "MegaeraBedroom02B"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "FuryAssistTrait",
+            "HeartDividerAfter": true
+        },
+        "Locked": 7
+    },
+    "NPC_Bouldy_01": {
+        "Maximum": 8,
+        "Locked": 11,
+        "Value": 0,
+        "InfiniteGifts": true,
+        "Name": "NPC_Bouldy_01",
+        "InheritFrom": [
+            "DefaultGiftData"
+        ]
+    },
+    "NPC_Persephone_Home_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Persephone_Max",
+        "1": {
+            "Gift": "ChamberStackTrait"
+        },
+        "Name": "NPC_Persephone_Home_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "PersephoneGift09"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_PersephoneSticker_Max",
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PersephoneAboutNyx02"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "AthenaUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Athena_Max",
+        "1": {
+            "Gift": "ForceAthenaBoonTrait"
+        },
+        "Name": "AthenaUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "AthenaGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AthenaRunCleared03"
+            ]
+        },
+        "MaxedSticker": "Keepsake_AthenaSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Hades_01": {
+        "Maximum": 5,
+        "Locked": 2,
+        "2": {
+            "Gift": "HadesShoutKeepsake"
+        },
+        "Name": "NPC_Hades_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "HadesGift05"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HadesPostEnding02"
+            ]
+        },
+        "MaxedSticker": "Keepsake_HadesSticker_Max",
+        "MaxedIcon": "Keepsake_Hades_Max"
+    },
+    "NPC_Sisyphus_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Sisyphus_Max",
+        "1": {
+            "Gift": "VanillaTrait"
+        },
+        "Name": "NPC_Sisyphus_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "SisyphusGift09_A"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_SisyphusSticker_Max",
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "SisyphusLiberationQuestComplete"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "SisyphusAssistTrait"
+        },
+        "Locked": 7
+    },
+    "DemeterUpgrade": {
+        "Maximum": 7,
+        "MaxedIcon": "Keepsake_Demeter_Max",
+        "1": {
+            "Gift": "ForceDemeterBoonTrait"
+        },
+        "Name": "DemeterUpgrade",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "DemeterGift07"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGodGiftData"
+        ],
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DemeterPostEpilogue03"
+            ]
+        },
+        "MaxedSticker": "Keepsake_DemeterSticker_Max",
+        "7": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Locked": 7
+    },
+    "NPC_Achilles_01": {
+        "Maximum": 9,
+        "MaxedIcon": "Keepsake_Achilles_Max",
+        "1": {
+            "Gift": "DirectionalArmorTrait"
+        },
+        "Name": "NPC_Achilles_01",
+        "MaxedRequirement": {
+            "RequiredTextLines": [
+                "AchillesGift09_A"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultGiftData"
+        ],
+        "MaxedSticker": "Keepsake_AchillesSticker_Max",
+        "9": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "Value": 0,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "MyrmidonReunionQuestComplete"
+            ]
+        },
+        "8": {
+            "RequiredResource": "SuperGiftPoints"
+        },
+        "7": {
+            "RequiredResource": "SuperGiftPoints",
+            "Gift": "AchillesPatroclusAssistTrait"
+        },
+        "Locked": 7
+    }
+}

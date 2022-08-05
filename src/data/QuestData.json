@@ -1,0 +1,2471 @@
+{
+    "BowHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "BowWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "BowHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2985"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "BowDoubleShotTrait",
+                "BowLongRangeDamageTrait",
+                "BowSlowChargeDamageTrait",
+                "BowTapFireTrait",
+                "BowPenetrationTrait",
+                "BowPowerShotTrait",
+                "BowSecondaryBarrageTrait",
+                "BowTripleShotTrait",
+                "BowSecondaryFocusedFireTrait",
+                "BowChainShotTrait",
+                "BowCloseAttackTrait",
+                "BowConsecutiveBarrageTrait"
+            ]
+        }
+    },
+    "GunHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "GunWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "GunHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2989"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "GunSlowGrenade",
+                "GunMinigunTrait",
+                "GunShotgunTrait",
+                "GunExplodingSecondaryTrait",
+                "GunGrenadeFastTrait",
+                "GunArmorPenerationTrait",
+                "GunHeavyBulletTrait",
+                "GunInfiniteAmmoTrait",
+                "GunGrenadeDropTrait",
+                "GunGrenadeClusterTrait",
+                "GunChainShotTrait",
+                "GunHomingBulletTrait"
+            ]
+        }
+    },
+    "ChaosBlessings": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 30,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ChaosGift03"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ChaosBlessings",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2981"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "LockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ChaosBlessingMeleeTrait",
+                "ChaosBlessingRangedTrait",
+                "ChaosBlessingAmmoTrait",
+                "ChaosBlessingMaxHealthTrait",
+                "ChaosBlessingBoonRarityTrait",
+                "ChaosBlessingMoneyTrait",
+                "ChaosBlessingMetapointTrait",
+                "ChaosBlessingSecondaryTrait",
+                "ChaosBlessingDashAttackTrait",
+                "ChaosBlessingBackstabTrait",
+                "ChaosBlessingAlphaStrikeTrait",
+                "ChaosBlessingExtraChanceTrait"
+            ]
+        }
+    },
+    "FirstClear": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 1000,
+        "UnlockGameStateRequirements": [],
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "FirstClear",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2967"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "MetaPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredMinRunsCleared": 1
+        }
+    },
+    "ShieldHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "ShieldWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ShieldHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2986"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ShieldDashAOETrait",
+                "ShieldRushProjectileTrait",
+                "ShieldThrowFastTrait",
+                "ShieldThrowCatchExplode",
+                "ShieldChargeHealthBufferTrait",
+                "ShieldChargeSpeedTrait",
+                "ShieldBashDamageTrait",
+                "ShieldPerfectRushTrait",
+                "ShieldThrowElectiveCharge",
+                "ShieldThrowEmpowerTrait",
+                "ShieldBlockEmpowerTrait",
+                "ShieldThrowRushTrait"
+            ]
+        }
+    },
+    "AchillesPatroclusReunion_B": {
+        "InheritFrom": [
+            "AchillesPatroclusReunion_A"
+        ],
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AchillesAboutMyrmidonReunionQuest03_B"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "MyrmidonReunionQuestComplete"
+            ]
+        },
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3005"
+            },
+            "BreakIfPlayed": true,
+            "Cooldowns": [
+                {
+                    "Name": "ZagreusProphecyFulfilledSpeech",
+                    "Time": 3
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4
+        },
+        "Name": "AchillesPatroclusReunion_B"
+    },
+    "SkellyTrueDeath": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 6,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "SkellyTrueDeathQuest_Beginning_01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "SkellyTrueDeath",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3001"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "SkellyTrueDeathQuestComplete"
+            ]
+        }
+    },
+    "MirrorUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 8,
+        "UnlockGameStateRequirements": {
+            "RequiredMinRunsCleared": 1,
+            "RequiredTrueFlags": [
+                "SwapMetaupgradesEnabled"
+            ],
+            "RequiredMetaUpgradeStageUnlocked": 4
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "MirrorUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3000"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredClearedWithMetaUpgrades": [
+                "BackstabMetaUpgrade",
+                "FirstStrikeMetaUpgrade",
+                "DoorHealMetaUpgrade",
+                "DarknessHealMetaUpgrade",
+                "ExtraChanceMetaUpgrade",
+                "ExtraChanceReplenishMetaUpgrade",
+                "StaminaMetaUpgrade",
+                "PerfectDashMetaUpgrade",
+                "StoredAmmoVulnerabilityMetaUpgrade",
+                "StoredAmmoSlowMetaUpgrade",
+                "AmmoMetaUpgrade",
+                "ReloadAmmoMetaUpgrade",
+                "MoneyMetaUpgrade",
+                "InterestMetaUpgrade",
+                "HealthMetaUpgrade",
+                "HighHealthDamageMetaUpgrade",
+                "VulnerabilityEffectBonusMetaUpgrade",
+                "GodEnhancementMetaUpgrade",
+                "RareBoonDropMetaUpgrade",
+                "DuoRarityBoonDropMetaUpgrade",
+                "EpicBoonDropMetaUpgrade",
+                "RunProgressRewardMetaUpgrade",
+                "RerollMetaUpgrade",
+                "RerollPanelMetaUpgrade"
+            ]
+        }
+    },
+    "BeowulfAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ChaosRevealsBeowulfAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "BeowulfAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3010"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_3691"
+            ]
+        }
+    },
+    "HermesBeatCharon": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 5,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HermesBeatCharonQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "HermesBeatCharon",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3015"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "BossCharonHermesQuestComplete01"
+            ]
+        }
+    },
+    "OlympianReunion": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 20,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PersephoneAboutOlympianReunionQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "OlympianReunion",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3590"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusAboutOlympianReunionQuest01",
+                "PoseidonAboutOlympianReunionQuest01",
+                "DemeterAboutOlympianReunionQuest01",
+                "AthenaAboutOlympianReunionQuest01",
+                "AphroditeAboutOlympianReunionQuest01",
+                "AresAboutOlympianReunionQuest01",
+                "ArtemisAboutOlympianReunionQuest01",
+                "DionysusAboutOlympianReunionQuest01",
+                "HermesAboutOlympianReunionQuest01",
+                "OlympianReunionQuestComplete"
+            ]
+        }
+    },
+    "FistHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "FistWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "FistHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2988"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "FistReachAttackTrait",
+                "FistAttackFinisherTrait",
+                "FistConsecutiveAttackTrait",
+                "FistDashAttackHealthBufferTrait",
+                "FistDoubleDashSpecialTrait",
+                "FistTeleportSpecialTrait",
+                "FistChargeSpecialTrait",
+                "FistKillTrait",
+                "FistSpecialLandTrait",
+                "FistSpecialFireballTrait",
+                "FistAttackDefenseTrait",
+                "FistHeavyAttackTrait"
+            ]
+        }
+    },
+    "HermesUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HermesGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "HermesUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2978"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "HermesShoutDodge",
+                "HermesWeaponTrait",
+                "HermesSecondaryTrait",
+                "RushRallyTrait",
+                "MoveSpeedTrait",
+                "RushSpeedBoostTrait",
+                "RapidCastTrait",
+                "BonusDashTrait",
+                "DodgeChanceTrait",
+                "RegeneratingSuperTrait",
+                "ChamberGoldTrait",
+                "AmmoReclaimTrait",
+                "SpeedDamageTrait"
+            ]
+        }
+    },
+    "SpearHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "SpearWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "SpearHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2987"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "SpearReachAttack",
+                "SpearAutoAttack",
+                "SpearThrowExplode",
+                "SpearThrowBounce",
+                "SpearThrowPenetrate",
+                "SpearThrowCritical",
+                "SpearSpinDamageRadius",
+                "SpearSpinChargeLevelTime",
+                "SpearDashMultiStrike",
+                "SpearThrowElectiveCharge",
+                "SpearSpinChargeAreaDamageTrait",
+                "SpearAttackPhalanxTrait"
+            ]
+        }
+    },
+    "WeaponAspects": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 6,
+        "UnlockGameStateRequirements": {
+            "RequiredMinUnlockedWeaponEnchantments": 4
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "WeaponAspects",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2991"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "SwordCriticalParryTrait",
+                "DislodgeAmmoTrait",
+                "BowLoadAmmoTrait",
+                "BowMarkHomingTrait",
+                "SpearTeleportTrait",
+                "SpearWeaveTrait",
+                "ShieldTwoShieldTrait",
+                "ShieldRushBonusProjectileTrait",
+                "FistVacuumTrait",
+                "FistWeaveTrait",
+                "GunManualReloadTrait",
+                "GunGrenadeSelfEmpowerTrait"
+            ]
+        }
+    },
+    "DionysusUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DionysusGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "DionysusUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2977"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "DionysusWeaponTrait",
+                "DionysusSecondaryTrait",
+                "DionysusRushTrait",
+                "DionysusRangedTrait",
+                "DionysusShoutTrait",
+                "DoorHealTrait",
+                "LowHealthDefenseTrait",
+                "FountainDamageBonusTrait",
+                "DionysusSpreadTrait",
+                "DionysusSlowTrait",
+                "DionysusPoisonPowerTrait",
+                "DionysusDefenseTrait"
+            ]
+        }
+    },
+    "PoseidonBeatTheseus": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 3,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonBeatTheseusQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "PoseidonBeatTheseus",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3017"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonBeatTheseusQuestComplete"
+            ]
+        }
+    },
+    "ArthurAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "NyxRevealsArthurAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ArthurAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3008"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_3250"
+            ]
+        }
+    },
+    "WeaponUnlocks": {
+        "IncompleteName": "Quest_UnknownCondition",
+        "RewardResourceAmount": 60,
+        "UnlockGameStateRequirements": [],
+        "Icon": "Shop_BedroomDecor",
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "WeaponUnlocks",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2983"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredWeaponsUnlocked": [
+                "SwordWeapon",
+                "SpearWeapon",
+                "ShieldWeapon",
+                "BowWeapon",
+                "FistWeapon",
+                "GunWeapon"
+            ]
+        }
+    },
+    "GilgameshAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "MinotaurRevealsGilgameshAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "GilgameshAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3591"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_4656"
+            ]
+        }
+    },
+    "LuciferAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusRevealsLuciferAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "LuciferAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3011"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_3690"
+            ]
+        }
+    },
+    "LegendaryUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 1000,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusFirstPickUp",
+                "PoseidonFirstPickUp",
+                "AthenaFirstPickUp",
+                "AresFirstPickUp",
+                "AphroditeFirstPickUp",
+                "ArtemisFirstPickUp",
+                "DionysusFirstPickUp",
+                "HermesFirstPickUp",
+                "DemeterFirstPickUp"
+            ],
+            "RequiredAnyTraitsTaken": [
+                "ZeusChargedBoltTrait",
+                "DoubleCollisionTrait",
+                "ShieldHitTrait",
+                "AresCursedRiftTrait",
+                "CharmTrait",
+                "MoreAmmoTrait",
+                "DionysusComboVulnerability",
+                "MagnetismTrait",
+                "UnstoredAmmoDamageTrait",
+                "InstantChillKill"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "LegendaryUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3592"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ZeusChargedBoltTrait",
+                "DoubleCollisionTrait",
+                "ShieldHitTrait",
+                "AresCursedRiftTrait",
+                "CharmTrait",
+                "MoreAmmoTrait",
+                "DionysusComboVulnerability",
+                "MagnetismTrait",
+                "UnstoredAmmoDamageTrait",
+                "InstantChillKill"
+            ]
+        }
+    },
+    "RamaAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ArtemisRevealsRamaAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "RamaAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3009"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_3251"
+            ]
+        }
+    },
+    "MusicLessons": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "OrpheusAboutMusicPlaying01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "MusicLessons",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3012"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "OrpheusMusicProgress04"
+            ]
+        }
+    },
+    "EpilogueSetUp": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 5,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HadesAboutOlympianReunionQuest01A"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "EpilogueSetUp",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3740"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "PersephoneAboutOlympianReunionQuest01"
+            ]
+        }
+    },
+    "SisyphusLiberation": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "SisyphusLiberationQuest_Beginning_01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "SisyphusLiberation",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3003"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "SisyphusLiberationQuestComplete"
+            ]
+        }
+    },
+    "CosmeticsSmall": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredNumCosmeticsMin": 20
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "CosmeticsSmall",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2968"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredNumCosmeticsMin": 37
+        }
+    },
+    "DusaLoungeRenovation": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DusaLoungeRenovationQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "DusaLoungeRenovation",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3006"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "DusaLoungeRenovationQuestComplete"
+            ]
+        }
+    },
+    "ArtemisUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ArtemisGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ArtemisUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2976"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ArtemisWeaponTrait",
+                "ArtemisRushTrait",
+                "ArtemisRangedTrait",
+                "ArtemisSecondaryTrait",
+                "ArtemisShoutTrait",
+                "CritBonusTrait",
+                "ArtemisSupportingFireTrait",
+                "CritVulnerabilityTrait",
+                "ArtemisCriticalTrait",
+                "CriticalBufferMultiplierTrait",
+                "CriticalSuperGenerationTrait",
+                "ArtemisAmmoExitTrait"
+            ]
+        }
+    },
+    "AresUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AresGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "AresUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2975"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "AresWeaponTrait",
+                "AresSecondaryTrait",
+                "AresRushTrait",
+                "AresRangedTrait",
+                "AresShoutTrait",
+                "AresRetaliateTrait",
+                "IncreasedDamageTrait",
+                "OnEnemyDeathDamageInstanceBuffTrait",
+                "LastStandDamageBonusTrait",
+                "AresLongCurseTrait",
+                "AresLoadCurseTrait",
+                "AresAoETrait",
+                "AresDragTrait"
+            ]
+        }
+    },
+    "AchillesPatroclusReunion_A": {
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AchillesAboutMyrmidonReunionQuest03_A"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "Name": "AchillesPatroclusReunion_A",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3005"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "MyrmidonReunionQuestComplete"
+            ]
+        }
+    },
+    "MeetChthonicGods": {
+        "IncompleteName": "Quest_UnknownCondition",
+        "RewardResourceAmount": 10,
+        "DisplayOrder": [
+            {
+                "Text": "MetHades",
+                "Requirement": "NPC_Hades_01"
+            },
+            {
+                "Text": "MetNyx",
+                "Requirement": "NPC_Nyx_01"
+            },
+            {
+                "Text": "MetCharon",
+                "Requirement": "NPC_Charon_01"
+            },
+            {
+                "Text": "MetThanatos",
+                "Requirement": "NPC_Thanatos_01"
+            },
+            {
+                "Text": "MetHypnos",
+                "Requirement": "NPC_Hypnos_01"
+            },
+            {
+                "Text": "MetFury",
+                "Requirement": "NPC_FurySister_01"
+            }
+        ],
+        "UnlockGameStateRequirements": [],
+        "Icon": "Shop_BedroomDecor",
+        "Name": "MeetChthonicGods",
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2970"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "LockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "Fury2FirstAppearance",
+                "Fury3FirstAppearance",
+                "ChaosFirstPickUp"
+            ],
+            "RequiredMinNPCInteractions": {
+                "NPC_Charon_01": 1,
+                "NPC_Thanatos_01": 1,
+                "NPC_Hades_01": 1,
+                "NPC_Nyx_01": 1,
+                "NPC_FurySister_01": 1,
+                "NPC_Hypnos_01": 1
+            }
+        }
+    },
+    "AthenaUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": [],
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "AthenaUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2971"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "AthenaWeaponTrait",
+                "AthenaSecondaryTrait",
+                "AthenaRushTrait",
+                "AthenaRangedTrait",
+                "AthenaShoutTrait",
+                "TrapDamageTrait",
+                "EnemyDamageTrait",
+                "AthenaRetaliateTrait",
+                "PreloadSuperGenerationTrait",
+                "AthenaBackstabDebuffTrait",
+                "AthenaShieldTrait"
+            ]
+        }
+    },
+    "AchillesPatroclusReunion_C": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AchillesAboutMyrmidonReunionQuest03_C"
+            ]
+        },
+        "InheritFrom": [
+            "AchillesPatroclusReunion_A"
+        ],
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "MyrmidonReunionQuestComplete"
+            ]
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3005"
+            },
+            "BreakIfPlayed": true,
+            "Cooldowns": [
+                {
+                    "Name": "ZagreusProphecyFulfilledSpeech",
+                    "Time": 3
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4
+        },
+        "Name": "AchillesPatroclusReunion_C"
+    },
+    "OrpheusRelease": {
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "RewardResourceAmount": 80,
+        "DisplayOrder": [
+            {
+                "Text": "OrpheusFirstMeeting",
+                "Requirement": "NPC_Orpheus_01"
+            }
+        ],
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "HadesAboutOrpheusUnlockItem01"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "Name": "OrpheusRelease",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3588"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredMinNPCInteractions": {
+                "NPC_Orpheus_01": 1
+            }
+        }
+    },
+    "OrpheusEurydiceReunion": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "EurydiceProgressWithOrpheus03"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "OrpheusEurydiceReunion",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3004"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "OrpheusAboutSingersReunionQuest01"
+            ]
+        }
+    },
+    "SkellyTrueDeath_B": {
+        "InheritFrom": [
+            "SkellyTrueDeath"
+        ],
+        "RewardResourceAmount": 6,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "SkellyTrueDeathQuest_Beginning_01B"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "SkellyTrueDeathQuestComplete"
+            ]
+        },
+        "RewardResourceName": "SuperGems",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3001"
+            },
+            "BreakIfPlayed": true,
+            "Cooldowns": [
+                {
+                    "Name": "ZagreusProphecyFulfilledSpeech",
+                    "Time": 3
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4
+        },
+        "Name": "SkellyTrueDeath_B"
+    },
+    "NyxChaosReunion": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 4,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "NyxAboutChaos06"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "NyxChaosReunion",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3002"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "NyxInChaos01"
+            ]
+        }
+    },
+    "ChaosCurses": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 30,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ChaosGift02"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ChaosCurses",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2982"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "LockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ChaosCurseNoMoneyTrait",
+                "ChaosCurseAmmoUseDelayTrait",
+                "ChaosCursePrimaryAttackTrait",
+                "ChaosCurseSecondaryAttackTrait",
+                "ChaosCurseCastAttackTrait",
+                "ChaosCurseDeathWeaponTrait",
+                "ChaosCurseHiddenRoomReward",
+                "ChaosCurseDamageTrait",
+                "ChaosCurseTrapDamageTrait",
+                "ChaosCurseHealthTrait",
+                "ChaosCurseMoveSpeedTrait",
+                "ChaosCurseDashRangeTrait",
+                "ChaosCurseSpawnTrait"
+            ]
+        }
+    },
+    "PoseidonFish": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 250,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonFishQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "PoseidonFish",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3013"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonFishQuestComplete"
+            ]
+        }
+    },
+    "DemeterUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "DemeterGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "DemeterUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2979"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "DemeterWeaponTrait",
+                "DemeterRushTrait",
+                "DemeterRangedTrait",
+                "DemeterSecondaryTrait",
+                "DemeterShoutTrait",
+                "CastNovaTrait",
+                "DemeterRangedBonusTrait",
+                "DemeterRetaliateTrait",
+                "ZeroAmmoBonusTrait",
+                "MaximumChillBlast",
+                "MaximumChillBonusSlow"
+            ]
+        }
+    },
+    "WeaponClears": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 10,
+        "UnlockGameStateRequirements": {
+            "RequiredMinRunsCleared": 1,
+            "RequiredWeaponsUnlocked": [
+                "SwordWeapon",
+                "SpearWeapon",
+                "ShieldWeapon",
+                "BowWeapon",
+                "GunWeapon",
+                "FistWeapon"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "WeaponClears",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2990"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredClearsWithWeapons": {
+                "Names": [
+                    "SwordWeapon",
+                    "SpearWeapon",
+                    "ShieldWeapon",
+                    "BowWeapon",
+                    "FistWeapon",
+                    "GunWeapon"
+                ]
+            }
+        }
+    },
+    "AphroditeUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AphroditeGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "AphroditeUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2974"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "AphroditeWeaponTrait",
+                "AphroditeSecondaryTrait",
+                "AphroditeRushTrait",
+                "AphroditeRangedTrait",
+                "AphroditeShoutTrait",
+                "AphroditeRangedBonusTrait",
+                "AphroditeRetaliateTrait",
+                "AphroditeDeathTrait",
+                "ProximityArmorTrait",
+                "HealthRewardBonusTrait",
+                "AphroditeDurationTrait",
+                "AphroditeWeakenTrait",
+                "AphroditePotencyTrait"
+            ]
+        }
+    },
+    "WellShopItems": {
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "MaxEntriesPerColumn": 13,
+        "RewardResourceAmount": 150,
+        "Spacing": 29,
+        "UnlockGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "TemporaryDoorHealTrait",
+                "TemporaryImprovedWeaponTrait",
+                "TemporaryImprovedSecondaryTrait",
+                "TemporaryImprovedTrapDamageTrait",
+                "TemporaryMoreAmmoTrait",
+                "TemporaryBoonRarityTrait"
+            ]
+        },
+        "FontSize": 19,
+        "Icon": "Shop_BedroomDecor",
+        "Name": "WellShopItems",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3014"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "DisplayOrder": [
+            {
+                "Requirement": "HealDropRange"
+            },
+            {
+                "Requirement": "EmptyMaxHealthDrop"
+            },
+            {
+                "Requirement": "DamageSelfDrop"
+            },
+            {
+                "Requirement": "LastStandDrop"
+            },
+            {
+                "Requirement": "MetaDropRange"
+            },
+            {
+                "Requirement": "GemDropRange"
+            },
+            {
+                "Requirement": "KeepsakeChargeDrop"
+            },
+            {
+                "Requirement": "RandomStoreItem"
+            }
+        ],
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredMinItemInteractions": {
+                "EmptyMaxHealthDrop": 1,
+                "DamageSelfDrop": 1,
+                "HealDropRange": 1,
+                "LastStandDrop": 1,
+                "GemDropRange": 1,
+                "KeepsakeChargeDrop": 1,
+                "MetaDropRange": 1,
+                "RandomStoreItem": 1
+            },
+            "RequiredTraitsTaken": [
+                "TemporaryDoorHealTrait",
+                "TemporaryWeaponLifeOnKillTrait",
+                "TemporaryImprovedWeaponTrait",
+                "TemporaryMoreAmmoTrait",
+                "TemporaryImprovedRangedTrait",
+                "TemporaryMoveSpeedTrait",
+                "TemporaryBoonRarityTrait",
+                "TemporaryLastStandHealTrait",
+                "TemporaryArmorDamageTrait",
+                "TemporaryAlphaStrikeTrait",
+                "TemporaryBackstabTrait",
+                "TemporaryImprovedSecondaryTrait",
+                "TemporaryImprovedTrapDamageTrait",
+                "TemporaryPreloadSuperGenerationTrait",
+                "TemporaryForcedSecretDoorTrait",
+                "TemporaryForcedChallengeSwitchTrait",
+                "TemporaryForcedFishingPointTrait",
+                "TemporaryBlockExplodingChariotsTrait"
+            ]
+        }
+    },
+    "KeepsakesQuest": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusGift01",
+                "AthenaGift01",
+                "AchillesGift01",
+                "CerberusGift01",
+                "NyxGift01",
+                "SkellyGift01",
+                "DusaGift01",
+                "HypnosGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "KeepsakesQuest",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2992"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "MaxHealthKeepsakeTrait",
+                "DirectionalArmorTrait",
+                "BackstabAlphaStrikeTrait",
+                "BonusMoneyTrait",
+                "LifeOnUrnTrait",
+                "ReincarnationTrait",
+                "ShopDurationTrait",
+                "VanillaTrait",
+                "ShieldAfterHitTrait",
+                "DistanceDamageTrait",
+                "ShieldBossTrait",
+                "PerfectClearDamageBonusTrait",
+                "LowHealthDamageTrait",
+                "ForceAthenaBoonTrait",
+                "ForceAphroditeBoonTrait",
+                "ForceArtemisBoonTrait",
+                "ForceZeusBoonTrait",
+                "ForcePoseidonBoonTrait",
+                "ForceAresBoonTrait",
+                "ForceDionysusBoonTrait",
+                "ForceDemeterBoonTrait",
+                "FastClearDodgeBonusTrait",
+                "ChaosBoonTrait"
+            ]
+        }
+    },
+    "EliteAttributeKills": {
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "RewardResourceAmount": 450,
+        "DisplayOrder": [
+            {
+                "Text": "EliteAttribute_Blink",
+                "Requirement": "Blink"
+            },
+            {
+                "Text": "EliteAttribute_HeavyArmor",
+                "Requirement": "HeavyArmor"
+            },
+            {
+                "Text": "EliteAttribute_ExtraDamage",
+                "Requirement": "ExtraDamage"
+            },
+            {
+                "Text": "EliteAttribute_Vacuuming",
+                "Requirement": "Vacuuming"
+            },
+            {
+                "Text": "EliteAttribute_DeathSpreadHitShields",
+                "Requirement": "DeathSpreadHitShields"
+            },
+            {
+                "Text": "EliteAttribute_Frenzy",
+                "Requirement": "Frenzy"
+            },
+            {
+                "Text": "EliteAttribute_Beams",
+                "Requirement": "Beams"
+            },
+            {
+                "Text": "EliteAttribute_Disguise",
+                "Requirement": "Disguise"
+            },
+            {
+                "Text": "EliteAttribute_Molten",
+                "Requirement": "Molten"
+            },
+            {
+                "Text": "EliteAttribute_Homing",
+                "Requirement": "Homing"
+            },
+            {
+                "Text": "EliteAttribute_MultiEgg",
+                "Requirement": "MultiEgg"
+            }
+        ],
+        "UnlockGameStateRequirements": {
+            "RequiredMinRunsCleared": 1,
+            "RequiredMinShrinePointThresholdClear": 1
+        },
+        "Icon": "Shop_BedroomDecor",
+        "Name": "EliteAttributeKills",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2999"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredEliteAttributeKills": {
+                "Blink": 1,
+                "Molten": 1,
+                "Frenzy": 1,
+                "Vacuuming": 1,
+                "ExtraDamage": 1,
+                "MultiEgg": 1,
+                "HeavyArmor": 1,
+                "Homing": 1,
+                "DeathSpreadHitShields": 1,
+                "Disguise": 1,
+                "Beams": 1
+            }
+        }
+    },
+    "MiniBossKills": {
+        "IncompleteName": "Quest_UnknownCondition",
+        "RewardResourceAmount": 3,
+        "DisplayOrder": [
+            "BloodlessGrenadierElite",
+            "HeavyRangedSplitterMiniboss",
+            "WretchAssassinMiniboss",
+            "ShieldRangedElite",
+            "HitAndRunUnitElite",
+            "CrusherUnitElite",
+            "SpreadShotUnitMiniboss",
+            "FlurrySpawnerElite",
+            "ThiefImpulseMineLayerMiniboss",
+            "HeavyRangedForkedMiniboss",
+            "RatThugMiniboss",
+            "SatyrRangedMiniboss"
+        ],
+        "UnlockGameStateRequirements": {
+            "RequiredSeenRooms": [
+                "D_Intro"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "Name": "MiniBossKills",
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2994"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredKills": {
+                "HeavyRangedSplitterMiniboss": 1,
+                "BloodlessGrenadierElite": 1,
+                "CrusherUnitElite": 1,
+                "WretchAssassinMiniboss": 1,
+                "ThiefImpulseMineLayerMiniboss": 1,
+                "RatThugMiniboss": 1,
+                "FlurrySpawnerElite": 1,
+                "HeavyRangedForkedMiniboss": 1,
+                "SpreadShotUnitMiniboss": 1,
+                "SatyrRangedMiniboss": 1,
+                "HitAndRunUnitElite": 1,
+                "ShieldRangedElite": 1
+            }
+        }
+    },
+    "FirstSkellyStatue": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 5,
+        "UnlockGameStateRequirements": {
+            "RequiredMinRunsCleared": 1,
+            "RequiredTextLines": [
+                "TrophyQuest_Beginning_01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "FirstSkellyStatue",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2995"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "TrophyQuest_BronzeUnlocked_01"
+            ]
+        }
+    },
+    "CodexSmall": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 40,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AchillesGrantsCodex"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "CodexSmall",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2993"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredCodexEntriesMin": 70
+        }
+    },
+    "ChaosKeepsakeEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 3,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ChaosSurfaceQuest01",
+                "LordHadesDefeated02"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ChaosKeepsakeEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3016"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGems",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "LordHadesChaosSurfaceQuestDefeat01"
+            ]
+        }
+    },
+    "PoseidonUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "PoseidonGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "PoseidonUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2973"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "PoseidonWeaponTrait",
+                "PoseidonSecondaryTrait",
+                "PoseidonRushTrait",
+                "PoseidonRangedTrait",
+                "PoseidonShoutTrait",
+                "EncounterStartOffenseBuffTrait",
+                "RoomRewardBonusTrait",
+                "DefensiveSuperGenerationTrait",
+                "PoseidonShoutDurationTrait",
+                "BonusCollisionTrait",
+                "SlamExplosionTrait",
+                "SlipperyTrait",
+                "BossDamageTrait"
+            ]
+        }
+    },
+    "MeetOlympians": {
+        "IncompleteName": "Quest_UnknownCondition",
+        "RewardResourceAmount": 3,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusFirstPickUp"
+            ]
+        },
+        "Icon": "Shop_BedroomDecor",
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "MeetOlympians",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2969"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "GiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusFirstPickUp",
+                "PoseidonFirstPickUp",
+                "AthenaFirstPickUp",
+                "DionysusFirstPickUp",
+                "AphroditeFirstPickUp",
+                "AresFirstPickUp",
+                "ArtemisFirstPickUp"
+            ]
+        }
+    },
+    "DefaultQuestItem": {
+        "Icon": "Shop_BedroomDecor",
+        "Name": "DefaultQuestItem",
+        "RewardResourceAmount": 10,
+        "RewardResourceName": "Gems",
+        "DebugOnly": true
+    },
+    "SynergyUpgrades": {
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "MaxEntriesPerColumn": 14,
+        "RewardResourceAmount": 15,
+        "Spacing": 28,
+        "UnlockGameStateRequirements": {
+            "RequiredAnyTraitsTaken": [
+                "LightningCloudTrait",
+                "AutoRetaliateTrait",
+                "ImpactBoltTrait",
+                "ReboundingAthenaCastTrait",
+                "TriggerCurseTrait",
+                "SlowProjectileTrait",
+                "ArtemisReflectBuffTrait",
+                "AresHomingTrait",
+                "AmmoBoltTrait",
+                "HeartsickCritDamageTrait",
+                "CurseSickTrait",
+                "ImprovedPomTrait",
+                "DionysusAphroditeStackIncreaseTrait",
+                "RaritySuperBoost",
+                "HomingLaserTrait",
+                "IceStrikeArrayTrait",
+                "BlizzardOrbTrait",
+                "JoltDurationTrait",
+                "PoseidonAresProjectileTrait",
+                "ArtemisBonusProjectileTrait",
+                "CastBackstabTrait",
+                "PoisonTickRateTrait",
+                "SelfLaserTrait",
+                "StationaryRiftTrait",
+                "NoLastStandRegenerationTrait",
+                "RegeneratingCappedSuperTrait",
+                "StatusImmunityTrait",
+                "PoisonCritVulnerabilityTrait"
+            ]
+        },
+        "FontSize": 18,
+        "Icon": "Shop_BedroomDecor",
+        "Name": "SynergyUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2980"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "LightningCloudTrait",
+                "AutoRetaliateTrait",
+                "ImpactBoltTrait",
+                "ReboundingAthenaCastTrait",
+                "TriggerCurseTrait",
+                "SlowProjectileTrait",
+                "ArtemisReflectBuffTrait",
+                "AresHomingTrait",
+                "AmmoBoltTrait",
+                "HeartsickCritDamageTrait",
+                "CurseSickTrait",
+                "ImprovedPomTrait",
+                "DionysusAphroditeStackIncreaseTrait",
+                "RaritySuperBoost",
+                "HomingLaserTrait",
+                "IceStrikeArrayTrait",
+                "BlizzardOrbTrait",
+                "JoltDurationTrait",
+                "PoseidonAresProjectileTrait",
+                "ArtemisBonusProjectileTrait",
+                "CastBackstabTrait",
+                "PoisonTickRateTrait",
+                "SelfLaserTrait",
+                "StationaryRiftTrait",
+                "NoLastStandRegenerationTrait",
+                "RegeneratingCappedSuperTrait",
+                "StatusImmunityTrait",
+                "PoisonCritVulnerabilityTrait"
+            ]
+        }
+    },
+    "GuanYuAspectEscape": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AchillesRevealsGuanYuAspect01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "GuanYuAspectEscape",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3007"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperGiftPoints",
+        "CompleteGameStateRequirements": {
+            "RequiredPlayed": [
+                "/VO/ZagreusField_3231"
+            ]
+        }
+    },
+    "ZeusUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 150,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "ZeusGift01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "ZeusUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2972"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "ZeusWeaponTrait",
+                "ZeusRushTrait",
+                "ZeusRangedTrait",
+                "ZeusSecondaryTrait",
+                "ZeusShoutTrait",
+                "RetaliateWeaponTrait",
+                "SuperGenerationTrait",
+                "OnWrathDamageBuffTrait",
+                "PerfectDashBoltTrait",
+                "ZeusBonusBounceTrait",
+                "ZeusLightningDebuff",
+                "ZeusBoltAoETrait",
+                "ZeusBonusBoltTrait"
+            ]
+        }
+    },
+    "PactUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 15,
+        "UnlockGameStateRequirements": {
+            "RequiredTrueFlags": [
+                "ShrineUnlocked"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "PactUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2998"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredClearedWithMetaUpgrades": [
+                "EnemyDamageShrineUpgrade",
+                "HealingReductionShrineUpgrade",
+                "ShopPricesShrineUpgrade",
+                "EnemyCountShrineUpgrade",
+                "BossDifficultyShrineUpgrade",
+                "EnemyHealthShrineUpgrade",
+                "EnemyEliteShrineUpgrade",
+                "MinibossCountShrineUpgrade",
+                "ForceSellShrineUpgrade",
+                "EnemySpeedShrineUpgrade",
+                "TrapDamageShrineUpgrade",
+                "MetaUpgradeStrikeThroughShrineUpgrade",
+                "EnemyShieldShrineUpgrade",
+                "ReducedLootChoicesShrineUpgrade",
+                "BiomeSpeedShrineUpgrade"
+            ]
+        }
+    },
+    "SwordHammerUpgrades": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 200,
+        "UnlockGameStateRequirements": [],
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "SwordHammerUpgrades",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_2984"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "Gems",
+        "CompleteGameStateRequirements": {
+            "RequiredTraitsTaken": [
+                "SwordTwoComboTrait",
+                "SwordSecondaryAreaDamageTrait",
+                "SwordHeavySecondStrikeTrait",
+                "SwordThrustWaveTrait",
+                "SwordSecondaryDoubleAttackTrait",
+                "SwordHealthBufferDamageTrait",
+                "SwordDoubleDashAttackTrait",
+                "SwordCriticalTrait",
+                "SwordBackstabTrait",
+                "SwordCursedLifeStealTrait",
+                "SwordGoldDamageTrait",
+                "SwordBlinkTrait"
+            ]
+        }
+    },
+    "AresEarnKills": {
+        "Icon": "Shop_BedroomDecor",
+        "RewardResourceAmount": 2,
+        "UnlockGameStateRequirements": {
+            "RequiredTextLines": [
+                "AresKillQuest01"
+            ]
+        },
+        "InheritFrom": [
+            "DefaultQuestItem"
+        ],
+        "Name": "AresEarnKills",
+        "CashedOutVoiceLines": {
+            "1": {
+                "Cue": "/VO/ZagreusHome_3027"
+            },
+            "Cooldowns": [
+                {
+                    "Time": 3,
+                    "Name": "ZagreusProphecyFulfilledSpeech"
+                }
+            ],
+            "RandomRemaining": true,
+            "PreLineWait": 0.4,
+            "BreakIfPlayed": true
+        },
+        "RewardResourceName": "SuperLockKeys",
+        "CompleteGameStateRequirements": {
+            "RequiredTextLines": [
+                "AresKillQuestComplete"
+            ]
+        }
+    }
+}
