@@ -37,6 +37,22 @@ export  function QuestLable({id,noLink,showId} : {id:string,noLink ?: boolean,sh
     )
 }
 
+export  function ConditionalItemLabel({id,noLink,showId} : {id:string,noLink ?: boolean,showId ?: boolean}) {
+    const saveData = createSaveData(useContext(SaveDataContext));   
+    const itemStatus = saveData?.getGameStateValue<string>("Cosmetics",id);
+   
+    let mark = itemStatus ? " [已购买] " : "";
+    const textId = showId ? (" " + id + " ") : undefined;
+
+    return (
+        <span>
+           { noLink ? <span>{translateWord(id)}</span> : <Link to={"/ConditionalItems/" + id} >{translateWord(id)}</Link> }
+           {textId}
+           {mark}
+        </span>
+    )
+}
+
 export  function GiftLable({id,noLink} : {id:string,noLink ?: boolean}) {
     const saveData = createSaveData(useContext(SaveDataContext));   
 
@@ -80,29 +96,6 @@ export function TextRow({text, remarkFun}:TextRowProps) {
 }
 
 
-export  function TraitHasTakenLabel({id} : {id:string}) {
-    const saveData = createSaveData(useContext(SaveDataContext));   
-    const hasTaken = saveData?.getGameStateValue<boolean>("TraitsTaken",id) || false;  
-    let mark = hasTaken ? " [已取得] " : "";
-    return (
-        <span>
-           <span>{translateWord(id)}</span>
-           {mark}
-        </span>
-    )
-}
-
-export  function WeaponsUnlokedLabel({id} : {id:string}) {
-    const saveData = createSaveData(useContext(SaveDataContext));   
-    const unlocked = saveData?.getGameStateValue<boolean>("WeaponsUnlocked",id) || false;  
-    let mark = unlocked ? " [已解锁] " : "";
-    return (
-        <span>
-           <span>{translateWord(id)}</span>
-           {mark}
-        </span>
-    )
-}
 
 export function TextLabel({id,attachDescription, mark,linkPrefix} : {id:string,attachDescription ?:string,  mark:(saveData:SaveData)=>string,linkPrefix ?: string}){
     const saveData = createSaveData(useContext(SaveDataContext));  

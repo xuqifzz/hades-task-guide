@@ -1,7 +1,7 @@
 import React from 'react'
 import { GameStateEligible } from './data/GameData'
-import { TextLineLabel,TextRow, TraitHasTakenLabel, WeaponsUnlokedLabel,TextLabel } from './ViewComponents'
-import {Dict,Dict2Array,dictLength} from './data/utils'
+import { TextLineLabel,TextRow,TextLabel, ConditionalItemLabel } from './ViewComponents'
+import {Dict2Array} from './data/utils'
 
 function ULView({header,child}:{header:string,child:()=>JSX.Element[]}){
     let keyIndex = 0;
@@ -49,7 +49,11 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     //TextLines
     "RequiredTextLines": r => <TextLineList  header="需要达成以下所有对话" textLines={r!} />,
     "RequiredAnyTextLines": r => <TextLineList header="需要达成以下所有对话" textLines={r!} />,
+    "RequiredFalseTextLinesThisRun": r => <TextLineList header="本次逃脱行动没有发生以下对话" textLines={r!} />,
     "RequiredMinAnyTextLines": r => <TextLineList header={`需要达成以下对话中的 ${r!.Count} 项`} textLines={r!.TextLines} />,
+    
+    //ConditionalItem
+    "RequiredCosmetics": r => <ULView header={`在承包商处购买以下项目`}  child={()=> r!.map(t => <ConditionalItemLabel id={t}/>) } />,
     
  
     //ULView string[] - boolean
@@ -59,6 +63,8 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredPlayed": r => <ULView header={`已播完以下所有语音`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getSaveDataValue<boolean>("SpeechRecord",t) ? " [已播放] " : ""} />) } />,
     "RequiredTrueFlags": r => <ULView header={`下列标志位为真`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getGameStateValue<boolean>("Flags",t) ? " [真] " : ""} />) } />,
     "RequiredFalseFlags": r => <ULView header={`下列标志位为假`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getGameStateValue<boolean>("Flags",t) === false ? " [假] " : ""} />) } />,
+    
+    
     
     //ULView string[] - number
     "RequiredClearsWithWeapons": r => <ULView header={`至少使用以下武器通关一次`}  child={()=> r!.Names.map(t => <TextLabel id={t} mark={ s =>et(s.getGameStateValue<number>("TimesClearedWeapon",t),v=>` [${v}次] `)} />) } />,
@@ -98,17 +104,13 @@ for(let k in gameStateEligibleHalders){
 //     "RequiredClearedWithMetaUpgrades",
 // ] 
 
-function getGameStateEligibleKeyCount(p:GameStateEligible){
-    let count = 0;
-    for(let k in p) count++;
-    return count;
-}
+
 
 export default function GameStateEligibleView(prop: GameStateEligible) {
 
     const renderList: JSX.Element[] = [];
-    let requiresCount = getGameStateEligibleKeyCount(prop);
-    if(requiresCount == 0){
+    let requiresCount = Object.keys(prop).length;
+    if(requiresCount === 0){
         return <div>无</div>
     }
     requestOrder.forEach(key => {

@@ -22,7 +22,7 @@ type GameState = {
     EnemyKills: Dict<number>,
     CosmeticsAdded: Dict<number>,
     ItemInteractions:Dict<number>,
-   
+    Cosmetics:Dict<string>
 }
 
 type GameStateDictValue<T> = KeysByValueType<GameState, Dict<T>>
@@ -90,15 +90,15 @@ export default class SaveData {
     }
 
 
-    getGameStateValue<T extends number | boolean>(filedName: GameStateDictValue<T>, id: string) {
+    getGameStateValue<T extends number | boolean | string>(filedName: GameStateDictValue<T>, id: string) {
         const t = this.saveData.GameState[filedName] as Dict<T>;
         return t[id];
     }
-    getGameStateDictLength<T extends number | boolean>(filedName: GameStateDictValue<T>) {
+    getGameStateDictLength<T extends number | boolean | string>(filedName: GameStateDictValue<T>) {
         const t = this.saveData.GameState[filedName] as Dict<T>;
         return dictLength(t);
     }
-    getSaveDataValue<T extends number | boolean>(filedName: SaveDataDictValue<T>, id: string) {
+    getSaveDataValue<T extends number | boolean | string>(filedName: SaveDataDictValue<T>, id: string) {
         const t = this.saveData[filedName] as Dict<T>;
         return t[id];
     }

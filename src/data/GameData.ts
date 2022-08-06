@@ -4,6 +4,7 @@ import HelpTextFullList from './HelpTextFullList.json'
 import QuestOrderData from './QuestOrderData.json'
 import QuestData from './QuestData.json'
 import GiftData from './GiftData.json'
+import ConditionalItemData from './ConditionalItemData.json'
 import { Dict, Array2Dict, removeFormatSymbol } from './utils';
 
 export { QuestOrderData }
@@ -150,6 +151,8 @@ export interface GameStateEligible {
     RequiredNumCosmeticsMin ?: number,
     RequiredCodexEntriesMin ?: number,
     RequiredMinItemInteractions ?: Dict<number>,
+    RequiredFalseTextLinesThisRun ?: string[],
+    RequiredCosmetics ?: string[],
  
 }
 
@@ -310,6 +313,19 @@ export const WeaponOrderData:[string,string][] =[
     ["GunWeapon","ZeusRevealsLuciferAspect01"]
 ]
 
+//ConditionalItemData
+
+
+interface ConditionalItem {
+    GameStateRequirements: GameStateEligible,
+    Name: string,
+    ResourceName: string,
+    ResourceCost: number
+}
+const conditionalItemData = ConditionalItemData as unknown as Dict<ConditionalItem>
+export function getConditionalItem(id:string){
+    return conditionalItemData[id];
+}
 
 
 

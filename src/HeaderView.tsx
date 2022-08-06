@@ -51,10 +51,7 @@ export default function HeaderView(props: { onChangeSaveDataResult: (s: FromSave
                     style={{ display: "none" }}
                     type="file"
                     onChange={onFileChange}
-                /><span>{saveDataTip}</span>
-                {/* <input type="file" name="inputfile" onChange={onFileChange} ref={inputEl} id="fileElem" >
-                    <label className="button" htmlFor="fileElem">Select some files</label>
-                </input> */}
+                /><span>&nbsp;{saveDataTip}</span>
             </div>
             <hr />
 

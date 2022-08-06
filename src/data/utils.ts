@@ -22,7 +22,7 @@ export function Dict2Array<T>(dict:Dict<T>){
     }
     return result;
 }
-
+/* eslint-disable */
 export function dictLength<T>(d:Dict<T>){
     let count = 0;
     for(let k in d){
@@ -30,7 +30,7 @@ export function dictLength<T>(d:Dict<T>){
     }
     return count;
 }
-
+/* eslint-enable */
 export function removeFormatSymbol(s:string){
     if(!s) return "";
     let s2 = s.replace(/\{[\S\s]*?\}/g,"")

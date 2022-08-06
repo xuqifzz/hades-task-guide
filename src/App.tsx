@@ -9,6 +9,7 @@ import {FromSaveFileResult } from './lib/HadesSaveFile'
 import { SaveDataContext } from './context/SaveDataContext'
 import { Github } from "styled-icons/fa-brands/Github";
 import {ForkButton} from './styled'
+import ConditionalItemView from './ConditionalItemView';
 
 
 
@@ -39,6 +40,7 @@ function App() {
       <Route path = "/Quests/:id" element = {<QuestView />} />
       <Route path = "/TextLines/:id" element = {<TextLineView />} />
       <Route path = "/Gifts/:id" element = {<GiftView />} />
+      <Route path = "/ConditionalItems/:id" element = { <ConditionalItemView />} />
   
     </Routes>
     </div>
