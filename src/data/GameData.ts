@@ -131,53 +131,64 @@ export { HelpTextDict }
 
 //GameStateEligible
 export interface GameStateEligible {
-    RequiredMinRunsCleared?: number,
+    RequiresRunCleared?: boolean,
+    RequiresRunNotCleared ?:boolean,
+    RequiresLastRunCleared ?:boolean,
+    RequiresBestClearTimeLastRun ?: boolean
+    
+    RequiredMinRunsCleared?: number, 
+    ChanceToPlay?: number,
+    RequiredNumCosmeticsMin ?: number,
+    RequiredCodexEntriesMin ?: number,
+    RequiredMaxHealthFraction ?: number,
+    RequiredMaxLastStands ?: number,
+    RequiredMinCompletedRuns ?: number,  
+    MinRunsSinceSquelchedHermes ?: number,
+    RequiredMinUnlockedWeaponEnchantments ?: number,
+
+    AreIdsNotAlive ?: number[],
+
+    RequiredRoom ?: string,
+    RequiredTrait ?: string,
+    RequiredWeapon ?: string,
+    HasTraitNameInRoom ?: string,
+    RequiredRoomThisRun ?: string,
+    RequiredRoomLastRun ?: string,
+    RequiredUnitNotAlive ?:string,
+    RequiredGodLoot ?: string,
+
     RequiredTextLines?: string[],
     RequiredAnyTextLines?: string[],
-    RequiredMinAnyTextLines?: { Count: number, TextLines: string[] },
     RequiredWeaponsUnlocked?: string[],
     RequiredTraitsTaken?: string[],
     RequiredAnyTraitsTaken ?: string[],
-    RequiredMinNPCInteractions ?: Dict<number>
     RequiredPlayed ?: string[],
-    RequiredClearsWithWeapons ?:{Names:string[]}
-    RequiredMinUnlockedWeaponEnchantments ?: number,
-    RequiredTrueFlags ?: string[],
-    RequiredFalseFlags ? : string[],
-    RequiredClearedWithMetaUpgrades ?: string[],
-    RequiredEliteAttributeKills ?: Dict<number>,
-    RequiredSeenRooms ?: string[],
-    RequiredKills ?: Dict<number>,
-    RequiredNumCosmeticsMin ?: number,
-    RequiredCodexEntriesMin ?: number,
-    RequiredMinItemInteractions ?: Dict<number>,
     RequiredFalseTextLinesThisRun ?: string[],
     RequiredFalseTextLinesLastRun ? : string[],
     RequiredCosmetics ?: string[],
     RequiredFalseTextLines ?: string[],
-    RequiresRunNotCleared ?:boolean,
-    RequiresLastRunCleared ?:boolean,
-    MinRunsSinceSquelchedHermes ?: number,
-    RequiresBestClearTimeLastRun ?: boolean
-    RequiredRoom ?: string,
-    RequiredTrait ?: string,
-    RequiredWeapon ?: string,
-    RequiredMinActiveMetaUpgradeLevel ?: {Name:string,Count:number},
-    ConsecutiveClearsOfRoom ?: {Name:string,Count:number},
+    RequiredTrueFlags ?: string[],
+    RequiredFalseFlags ? : string[],
+    RequiredClearedWithMetaUpgrades ?: string[],
+    RequiredSeenRooms ?: string[],
     RequiredSupportAINames ?: string[],
-    RequiredGodLoot ?: string,
-    RequiredMaxHealthFraction ?: number,
-    RequiredMaxLastStands ?: number,
-    AreIdsNotAlive ?: number[],
-    RequiredUnitNotAlive ?:string,
-    RequiredMinCompletedRuns ?: number,
+    RequiredLastKilledByUnits ?: string[],
+
+    RequiredKills ?: Dict<number>,
+    RequiredMinItemInteractions ?: Dict<number>,
+    RequiredEliteAttributeKills ?: Dict<number>,
+    RequiredMinNPCInteractions ?: Dict<number>,
+
+    RequiredClearsWithWeapons ?:{Names:string[]}
+
+    ConsecutiveDeathsInRoom ?: {Name:string,Count:number},
+    ConsecutiveClearsOfRoom ?: {Name:string,Count:number},
+    RequiredMinActiveMetaUpgradeLevel ?: {Name:string,Count:number},
+
+    RequiredMinAnyTextLines?: { TextLines:string[],Count: number},
     MinRunsSinceAnyTextLines ?: {TextLines:string[],Count:number},
-    HasTraitNameInRoom ?: string,
-    RequiredRoomThisRun ?: string,
-    RequiredRoomLastRun ?: string,
-   
+    MaxRunsSinceAnyTextLines ?: {TextLines:string[],Count:number},
     
- 
 }
 
 

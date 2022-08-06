@@ -43,6 +43,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     //TextRow -no save
     
     "RequiresRunNotCleared": r => <TextRow text={`当前逃脱行动尚未完成`} />,
+    "RequiresRunCleared": r => <TextRow text={`当前逃脱行动已经成功`} />,
     "RequiresLastRunCleared": r => <TextRow text={`上次逃脱行动成功`} />,
     "MinRunsSinceSquelchedHermes": r => <TextRow text={`距离叫赫尔墨斯闭嘴至少 ${r} 次逃脱行动`} />,
     "RequiresBestClearTimeLastRun": r => <TextRow text={`上次逃脱行动通关时间为最快记录`} />,
@@ -51,6 +52,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredWeapon": r => <TextRow text={`当前装备武器: ${translateWord(r!)}`} />,
     "RequiredGodLoot": r => <TextRow text={`当前拥有 ${translateWord(r!)} 的祝福`} />,
     "RequiredMaxHealthFraction": r => <TextRow text={`当前血量不超过 ${r!*100} %`} />,
+    "ChanceToPlay": r => <TextRow text={`播放几率: ${r!*100} %`} />,
     "RequiredMaxLastStands": r => <TextRow text={`当前剩余起死回生数不超过 ${r}`} />,
     "HasTraitNameInRoom": r => <TextRow text={`当前房间出现祝福: ${translateWord(r!)}`} />,
     "RequiredUnitNotAlive": r => <TextRow text={ `当前不存在${translateWord(r!)}`} />,
@@ -60,12 +62,14 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     
     "RequiredMinActiveMetaUpgradeLevel": r => <TextRow text={`热度[${translateWord(r!.Name)}]至少为${r!.Count}级`} />,
     "ConsecutiveClearsOfRoom": r => <TextRow text={`连续通过房间[${translateWord(r!.Name)}] ${r!.Count} 次`} />,
+    "ConsecutiveDeathsInRoom": r => <TextRow text={`连续 ${r!.Count} 次在房间[${translateWord(r!.Name)}]被击败`} />,
  
     
     //ULView string[] - no save
     "RequiredSupportAINames": r => <ULView header={`AI支持:`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     
     "AreIdsNotAlive": r => <ULView header={`以下ID对象不存在:`}  child={()=> r!.map(t => <TextLabel id={"" + t}  />) } />,
+    "RequiredLastKilledByUnits": r => <ULView header={`上次击败你的敌人为以下单位之一`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     
    
     //TextRow
@@ -83,6 +87,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredFalseTextLinesLastRun": r => <TextLineList header="上次逃脱行动没有发生以下对话" textLines={r!} />,
     "RequiredMinAnyTextLines": r => <TextLineList header={`需要达成以下对话中的 ${r!.Count} 项`} textLines={r!.TextLines} />,
     "MinRunsSinceAnyTextLines": r => <TextLineList header={`距离下列对话至少 ${r!.Count} 次逃脱行动`} textLines={r!.TextLines} />,
+    "MaxRunsSinceAnyTextLines": r => <TextLineList header={`距离下列对话最多 ${r!.Count} 次逃脱行动`} textLines={r!.TextLines} />,
     
     //ConditionalItem
     "RequiredCosmetics": r => <ULView header={`在承包商处购买以下项目`}  child={()=> r!.map(t => <ConditionalItemLabel id={t}/>) } />,
