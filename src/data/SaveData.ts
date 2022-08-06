@@ -61,6 +61,10 @@ export default class SaveData {
         return runsCleared
     }
 
+    getCompletedRuns(){
+	   return this.saveData.GameState.RunHistory.length;	
+    }
+
     getQuestStatus(id: string): QuestStatusValue {
         return this.saveData.GameState.QuestStatus[id] || "Locked"
     }

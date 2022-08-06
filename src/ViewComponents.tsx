@@ -97,9 +97,12 @@ export function TextRow({text, remarkFun}:TextRowProps) {
 
 
 
-export function TextLabel({id,attachDescription, mark,linkPrefix} : {id:string,attachDescription ?:string,  mark:(saveData:SaveData)=>string,linkPrefix ?: string}){
+export function TextLabel({id,attachDescription, mark,linkPrefix} : {id:string,attachDescription ?:string,  mark?:(saveData:SaveData)=>string,linkPrefix ?: string}){
     const saveData = createSaveData(useContext(SaveDataContext));  
-    let m = saveData ? mark(saveData) : ""; 
+    let m = "";
+    if(saveData && mark){
+        m = mark(saveData) || ""
+    }
     return <span>
            { linkPrefix ?   (<Link to={linkPrefix + id} >{translateWord(id)}</Link>) :(<span>{translateWord(id)}</span>)}   
            {attachDescription}      

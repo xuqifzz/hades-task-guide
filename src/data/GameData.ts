@@ -152,7 +152,31 @@ export interface GameStateEligible {
     RequiredCodexEntriesMin ?: number,
     RequiredMinItemInteractions ?: Dict<number>,
     RequiredFalseTextLinesThisRun ?: string[],
+    RequiredFalseTextLinesLastRun ? : string[],
     RequiredCosmetics ?: string[],
+    RequiredFalseTextLines ?: string[],
+    RequiresRunNotCleared ?:boolean,
+    RequiresLastRunCleared ?:boolean,
+    MinRunsSinceSquelchedHermes ?: number,
+    RequiresBestClearTimeLastRun ?: boolean
+    RequiredRoom ?: string,
+    RequiredTrait ?: string,
+    RequiredWeapon ?: string,
+    RequiredMinActiveMetaUpgradeLevel ?: {Name:string,Count:number},
+    ConsecutiveClearsOfRoom ?: {Name:string,Count:number},
+    RequiredSupportAINames ?: string[],
+    RequiredGodLoot ?: string,
+    RequiredMaxHealthFraction ?: number,
+    RequiredMaxLastStands ?: number,
+    AreIdsNotAlive ?: number[],
+    RequiredUnitNotAlive ?:string,
+    RequiredMinCompletedRuns ?: number,
+    MinRunsSinceAnyTextLines ?: {TextLines:string[],Count:number},
+    HasTraitNameInRoom ?: string,
+    RequiredRoomThisRun ?: string,
+    RequiredRoomLastRun ?: string,
+   
+    
  
 }
 
@@ -176,6 +200,10 @@ export type CueText = {
 
 interface TextLineExtra {
     Name: string;
+    PlayOnce ?: boolean,
+    Priority ?: boolean,
+    SuperPriority ?: boolean,
+    Partner ?: string,
     cues: Cue[];
 }
 

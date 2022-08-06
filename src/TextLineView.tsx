@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { getTextLine, getCueTextList,getChoiceInfo, CueText, ChoiceInfo} from './data/GameData'
+import { getTextLine, getCueTextList,getChoiceInfo, CueText, ChoiceInfo, translateWord} from './data/GameData'
 import GameStateEligibleView from './GameStateEligibleView'
 import JsonView from './JsonView'
 import { TextLineLabel } from './ViewComponents'
@@ -47,6 +47,10 @@ export default function TextLineView() {
     return (
         <div>
             <h2>对话ID: <TextLineLabel id={id} noLink  /> </h2>
+            { textLine.PlayOnce && <div>该对话仅播放一次</div>}
+            { textLine.Priority && <div>该对话优先播放</div>}
+            { textLine.SuperPriority && <div>该对话超级优先播放</div>}
+            { textLine.Partner && <div>同伴: {`${translateWord(textLine.Partner)}`}</div>}
             <CueTextListView cueTextList={getCueTextList(textLine)} />
             { choiceInfoList ? <ChoiceInfoView choiceInfoList={choiceInfoList} /> : undefined}
            
