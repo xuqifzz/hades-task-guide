@@ -23,6 +23,7 @@ type GameState = {
     CosmeticsAdded: Dict<number>,
     ItemInteractions:Dict<number>,
     Cosmetics:Dict<string>
+    LifetimeResourcesSpent:Dict<number>,
 }
 
 type GameStateDictValue<T> = KeysByValueType<GameState, Dict<T>>

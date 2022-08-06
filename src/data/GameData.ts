@@ -120,7 +120,8 @@ mirrorKeyWords.forEach(k=>{
     }
 })
 HelpTextDict["MetaUpgradeStrikeThroughShrineUpgrade"] = HelpTextDict["DarknessCap"]
-
+HelpTextDict["Alecto"] = HelpTextDict["Harpy2"]
+//
 export function translateWord(word: string): string {
     let result = (HelpTextDict[word] && HelpTextDict[word].DisplayName) || word;
     return removeFormatSymbol(result);
@@ -134,6 +135,7 @@ export interface GameStateEligible {
     RequiresRunCleared?: boolean,
     RequiresRunNotCleared ?:boolean,
     RequiresLastRunCleared ?:boolean,
+    RequiresLastRunNotCleared ?:boolean,
     RequiresBestClearTimeLastRun ?: boolean
     
     RequiredMinRunsCleared?: number, 
@@ -143,10 +145,18 @@ export interface GameStateEligible {
     RequiredMaxHealthFraction ?: number,
     RequiredMaxLastStands ?: number,
     RequiredMinCompletedRuns ?: number,  
+    RequiredMaxCompletedRuns ?: number,  
+    RequiredMaxRunsCleared ?: number,  
     MinRunsSinceSquelchedHermes ?: number,
     RequiredMinUnlockedWeaponEnchantments ?: number,
+    IsIdAlive ?: number,
+    RequiredMaxSupportAINames ?: number,
+    RequiredLootChoices ?: number,
+    RequiredActiveShrinePointsMin ?: number,
+    RequiredAccumulatedMetaPoints ?: number,
 
     AreIdsNotAlive ?: number[],
+    AreIdsAlive ?: number[],
 
     RequiredRoom ?: string,
     RequiredTrait ?: string,
@@ -154,11 +164,17 @@ export interface GameStateEligible {
     HasTraitNameInRoom ?: string,
     RequiredRoomThisRun ?: string,
     RequiredRoomLastRun ?: string,
+    RequiredFalseSeenRoomThisRun ?: string,
+    RequiredDeathRoom ?: string,
     RequiredUnitNotAlive ?:string,
     RequiredGodLoot ?: string,
+    RequiredInactiveMetaUpgrade ?: string,
+    RequiredCosmeticItemVisible ?: string,
+    RequiredBiome ?: string,
 
     RequiredTextLines?: string[],
     RequiredAnyTextLines?: string[],
+    RequiredAnyOtherTextLines?: string[],
     RequiredWeaponsUnlocked?: string[],
     RequiredTraitsTaken?: string[],
     RequiredAnyTraitsTaken ?: string[],
@@ -166,28 +182,41 @@ export interface GameStateEligible {
     RequiredFalseTextLinesThisRun ?: string[],
     RequiredFalseTextLinesLastRun ? : string[],
     RequiredCosmetics ?: string[],
+    RequiredFalseCosmetics ?: string[],
     RequiredFalseTextLines ?: string[],
     RequiredTrueFlags ?: string[],
     RequiredFalseFlags ? : string[],
     RequiredClearedWithMetaUpgrades ?: string[],
     RequiredSeenRooms ?: string[],
     RequiredSupportAINames ?: string[],
+    RequiredFalseSupportAINames ?: string[],
     RequiredLastKilledByUnits ?: string[],
+    RequiredKillsThisRun ?: string[],
+    RequiredFalseTraits ?: string[],
+    RequiredFalseGodLoots ?: string[],
+    RequiredOneOfTraits ?: string[],
+    RequiredFalseSeenRooms?: string[],
+    RequiredFalseRooms?: string[],
 
     RequiredKills ?: Dict<number>,
     RequiredMinItemInteractions ?: Dict<number>,
     RequiredEliteAttributeKills ?: Dict<number>,
     RequiredMinNPCInteractions ?: Dict<number>,
+    RequiredLifetimeResourcesSpentMin ?: Dict<number>,
 
     RequiredClearsWithWeapons ?:{Names:string[]}
 
     ConsecutiveDeathsInRoom ?: {Name:string,Count:number},
     ConsecutiveClearsOfRoom ?: {Name:string,Count:number},
     RequiredMinActiveMetaUpgradeLevel ?: {Name:string,Count:number},
+    RequiredMaxActiveMetaUpgradeLevel ?: {Name:string,Count:number},
 
     RequiredMinAnyTextLines?: { TextLines:string[],Count: number},
     MinRunsSinceAnyTextLines ?: {TextLines:string[],Count:number},
     MaxRunsSinceAnyTextLines ?: {TextLines:string[],Count:number},
+    RequiredMaxAnyTextLines ?: {TextLines:string[],Count:number},
+
+    RequiredMinAnyCosmetics ?: {Cosmetics:string[],Count:number},
     
 }
 
