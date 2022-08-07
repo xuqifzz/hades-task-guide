@@ -121,6 +121,7 @@ mirrorKeyWords.forEach(k=>{
 })
 HelpTextDict["MetaUpgradeStrikeThroughShrineUpgrade"] = HelpTextDict["DarknessCap"]
 HelpTextDict["Alecto"] = HelpTextDict["Harpy2"]
+HelpTextDict["CurrentEmployeeOfTheMonth"] = {Id:"CurrentEmployeeOfTheMonth",DisplayName:"当前圣殿优秀员工"}
 //
 export function translateWord(word: string): string {
     let result = (HelpTextDict[word] && HelpTextDict[word].DisplayName) || word;
@@ -148,12 +149,16 @@ export interface GameStateEligible {
     RequiredMaxCompletedRuns ?: number,  
     RequiredMaxRunsCleared ?: number,  
     MinRunsSinceSquelchedHermes ?: number,
+    MaxRunsSinceSquelchedHermes ?: number,
     RequiredMinUnlockedWeaponEnchantments ?: number,
     IsIdAlive ?: number,
     RequiredMaxSupportAINames ?: number,
     RequiredLootChoices ?: number,
     RequiredActiveShrinePointsMin ?: number,
     RequiredAccumulatedMetaPoints ?: number,
+    RequiredActiveMetaPointsMin ?: number,
+    RequiredRunsCleared ?: number,
+    RequiredBossPhase ?: number,
 
     AreIdsNotAlive ?: number[],
     AreIdsAlive ?: number[],
@@ -168,9 +173,15 @@ export interface GameStateEligible {
     RequiredDeathRoom ?: string,
     RequiredUnitNotAlive ?:string,
     RequiredGodLoot ?: string,
+    RequiredLootThisRun ?: string,
     RequiredInactiveMetaUpgrade ?: string,
     RequiredCosmeticItemVisible ?: string,
     RequiredBiome ?: string,
+    RequiredUnitAlive ?: string,
+    RequiredTextLinesThisRun ?: string,
+    RequiredFalseGodLoot ?: string,
+    RequiredLastInteractedWeaponUpgrade ?: string,
+    RequiredKeepsake ?: string,
 
     RequiredTextLines?: string[],
     RequiredAnyTextLines?: string[],
@@ -179,9 +190,11 @@ export interface GameStateEligible {
     RequiredTraitsTaken?: string[],
     RequiredAnyTraitsTaken ?: string[],
     RequiredPlayed ?: string[],
+    RequiredFalsePlayed ?: string[],
     RequiredFalseTextLinesThisRun ?: string[],
     RequiredFalseTextLinesLastRun ? : string[],
     RequiredCosmetics ?: string[],
+    RequiredAnyCosmetics ?: string[],
     RequiredFalseCosmetics ?: string[],
     RequiredFalseTextLines ?: string[],
     RequiredTrueFlags ?: string[],
@@ -192,6 +205,7 @@ export interface GameStateEligible {
     RequiredFalseSupportAINames ?: string[],
     RequiredLastKilledByUnits ?: string[],
     RequiredKillsThisRun ?: string[],
+    RequiredKillsLastRun ?: string[],
     RequiredFalseTraits ?: string[],
     RequiredFalseGodLoots ?: string[],
     RequiredOneOfTraits ?: string[],
@@ -203,6 +217,9 @@ export interface GameStateEligible {
     RequiredEliteAttributeKills ?: Dict<number>,
     RequiredMinNPCInteractions ?: Dict<number>,
     RequiredLifetimeResourcesSpentMin ?: Dict<number>,
+    RequiredMinTimesSeenRoom ?: Dict<number>,
+
+    RequiredFalseValues ?: Dict<string>,
 
     RequiredClearsWithWeapons ?:{Names:string[]}
 

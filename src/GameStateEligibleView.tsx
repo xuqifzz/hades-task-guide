@@ -47,6 +47,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiresLastRunCleared": r => <TextRow text={`上次逃脱行动成功`} />,
     "RequiresLastRunNotCleared": r => <TextRow text={`上次逃脱行动失败`} />,
     "MinRunsSinceSquelchedHermes": r => <TextRow text={`距离叫赫尔墨斯闭嘴至少 ${r} 次逃脱行动`} />,
+    "MaxRunsSinceSquelchedHermes": r => <TextRow text={`距离叫赫尔墨斯闭嘴不超过 ${r} 次逃脱行动`} />,
     "RequiresBestClearTimeLastRun": r => <TextRow text={`上次逃脱行动通关时间为最快记录`} />,
     "RequiredRoom": r => <TextRow text={`指定房间: ${translateWord(r!)}`} />,
     "RequiredTrait": r => <TextRow text={`当前拥有祝福: ${translateWord(r!)}`} />,
@@ -65,10 +66,18 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredActiveShrinePointsMin": r => <TextRow text={ `当前热度点数至少为${r} `} />,
     "RequiredLootChoices": r => <TextRow text={ `祝福选择面板选项数为${r} `} />,
     "RequiredAccumulatedMetaPoints": r => <TextRow text={ `积累的黑暗宝石数超过${r} `} />,
+    "RequiredActiveMetaPointsMin": r => <TextRow text={ `投入在圣镜上的黑暗宝石数超过${r} `} />,
     "RequiredBiome": r => <TextRow text={ `当前区域为${translateWord(r!)} `} />,
     "RequiredDeathRoom": r => <TextRow text={ `本次逃脱行动在房间 ${translateWord(r!)} 被干掉`} />,
     "RequiredFalseSeenRoomThisRun": r => <TextRow text={ `本次逃脱未曾进入房间 ${translateWord(r!)}`} />,
     "RequiredCosmeticItemVisible": r => <TextRow  text={`装饰品 ${translateWord(r!)} 可见`}/>,
+    "RequiredUnitAlive": r => <TextRow  text={`当前存在单位: ${translateWord(r!)} `}/>,
+    "RequiredFalseGodLoot": r => <TextRow  text={`本次逃脱行动尚未拾取${translateWord(r!)}的祝福 `}/>,
+    "RequiredLastInteractedWeaponUpgrade": r => <TextRow  text={`最后交互的武器升级为${translateWord(r!)} `}/>,
+    "RequiredBossPhase": r => <TextRow  text={`Boss当前阶段: ${r} `}/>,
+    "RequiredLootThisRun": r => <TextRow  text={`本次逃脱行动曾拾取 ${translateWord(r!)} 的祝福`}/>,
+    "RequiredKeepsake": r => <TextRow  text={`携带信物: ${translateWord(r!)}`}/>,
+   
    
    
     
@@ -82,6 +91,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredSupportAINames": r => <ULView header={`当前存在下列帮手:`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     "RequiredFalseSupportAINames": r => <ULView header={`当前不存在下列帮手:`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     "RequiredKillsThisRun": r => <ULView header={`本次逃脱行动曾击败下列敌人:`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
+    "RequiredKillsLastRun": r => <ULView header={`上次逃脱行动曾击败下列敌人:`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     "AreIdsNotAlive": r => <ULView header={`以下ID对象不存在:`}  child={()=> r!.map(t => <TextLabel id={"" + t}  />) } />,
     "AreIdsAlive": r => <ULView header={`以下ID对象仍然存活:`}  child={()=> r!.map(t => <TextLabel id={"" + t}  />) } />,
     "RequiredLastKilledByUnits": r => <ULView header={`上次击败你的敌人为以下单位之一`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
@@ -95,6 +105,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     //TextRow
     "RequiredMinRunsCleared": r => <TextRow text={`至少通关 ${r} 次`} remarkFun={s=> `[已通关 ${s.getNumRunsCleared()} 次]`}/>,
     "RequiredMaxRunsCleared": r => <TextRow text={`最多通关 ${r} 次`} remarkFun={s=> `[已通关 ${s.getNumRunsCleared()} 次]`}/>,
+    "RequiredRunsCleared": r => <TextRow text={`通关次数刚好为 ${r} 次`} remarkFun={s=> `[已通关 ${s.getNumRunsCleared()} 次]`}/>,
     "RequiredMinCompletedRuns": r => <TextRow text={`至少进行 ${r} 次逃脱行动`} remarkFun={s=> `[逃脱行动次数: ${s.getCompletedRuns()}]`}/>,
     "RequiredMaxCompletedRuns": r => <TextRow text={`最多进行 ${r} 次逃脱行动`} remarkFun={s=> `[逃脱行动次数: ${s.getCompletedRuns()}]`}/>,
     "RequiredMinUnlockedWeaponEnchantments": r => <TextRow  text={`至少解锁 ${r} 个武器形态`} remarkFun={s => `[已解锁 ${s.getNumUnlockedWeaponUpgrades()} 种]`}/>,
@@ -113,10 +124,13 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "MaxRunsSinceAnyTextLines": r => <TextLineList header={`距离下列对话最多 ${r!.Count} 次逃脱行动`} textLines={r!.TextLines} />,
     "RequiredMaxAnyTextLines": r => <TextLineList header={`最多触发下列对话中的 ${r!.Count} 项`} textLines={r!.TextLines} />,
     
+    "RequiredTextLinesThisRun": r => <span>本次逃脱行动触发对话: <TextLineLabel id={r!} /></span>,
+    
     //ConditionalItem
     "RequiredCosmetics": r => <ULView header={`在承包商处购买以下项目`}  child={()=> r!.map(t => <ConditionalItemLabel id={t}/>) } />,
     "RequiredFalseCosmetics": r => <ULView header={`尚未在承包商处购买以下项目`}  child={()=> r!.map(t => <ConditionalItemLabel id={t}/>) } />,
     "RequiredMinAnyCosmetics": r => <ULView header={`在承包商处购买下列项目中的 ${r?.Count} 项`}  child={()=> r!.Cosmetics.map(t => <ConditionalItemLabel id={t}/>) } />,
+    "RequiredAnyCosmetics": r => <ULView header={`在承包商处购买下列项目中的任意一项`}  child={()=> r!.map(t => <ConditionalItemLabel id={t}/>) } />,
     
  
     //ULView string[] - boolean
@@ -124,6 +138,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredTraitsTaken": r => <ULView header={`曾经取得以下所有祝福`}  child={()=> r!.map(t =>  <TextLabel id={t} mark={s => s.getGameStateValue<boolean>("TraitsTaken",t) ? " [已取得] " : ""} />) } />,
     "RequiredWeaponsUnlocked": r => <ULView header={`解锁以下所有武器`}  child={()=> r!.map(t => <TextLabel id={t} mark={s => s.getGameStateValue<boolean>("WeaponsUnlocked",t) ? " [已解锁] " : ""} />) } />,
     "RequiredPlayed": r => <ULView header={`已播完以下所有语音`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getSaveDataValue<boolean>("SpeechRecord",t) ? " [已播放] " : ""} />) } />,
+    "RequiredFalsePlayed": r => <ULView header={`尚未播放以下任一语音`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getSaveDataValue<boolean>("SpeechRecord",t) ? " [已播放] " : ""} />) } />,
     "RequiredTrueFlags": r => <ULView header={`下列标志位为真`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getGameStateValue<boolean>("Flags",t) ? " [真] " : ""} />) } />,
     "RequiredFalseFlags": r => <ULView header={`下列标志位为假`}  child={()=> r!.map(t => <TextLabel id={t} mark={ s =>s.getGameStateValue<boolean>("Flags",t) === false ? " [假] " : ""} />) } />,
     
@@ -141,6 +156,9 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredMinNPCInteractions": r => <ULView header={`至少需要与指定NPC交互次数`}  child={()=> Dict2Array(r!).map(t => <TextLabel linkPrefix='/Gifts/' id={t.key} attachDescription={` ${t.value} `} mark={ s =>  et(s.getGameStateValue<number>("NPCInteractions",t.key),(v)=>` [当前交互次数: ${v} ]`) } />) } />,
     "RequiredMinItemInteractions": r => <ULView header={`至少需要与指定物品交互次数`}  child={()=> Dict2Array(r!).map(t => <TextLabel  id={t.key} attachDescription={` ${t.value} `} mark={ s =>  et(s.getGameStateValue<number>("ItemInteractions",t.key),(v)=>` [当前交互次数: ${v} ]`) } />) } />,
     "RequiredLifetimeResourcesSpentMin": r => <ULView header={`需要消费以下数量的资源`}  child={()=> Dict2Array(r!).map(t => <TextLabel  id={t.key} attachDescription={` x ${t.value} `} mark={ s =>  et(s.getGameStateValue<number>("LifetimeResourcesSpent",t.key),(v)=>` [当前消费数量: ${v} ]`) } />) } />,
+    "RequiredMinTimesSeenRoom": r => <ULView header={`需要到达房间至少指定次数`}  child={()=> Dict2Array(r!).map(t => <TextLabel  id={t.key} attachDescription={`  ${t.value} 次`} mark={ s =>  et(s.getGameStateValue<number>("RoomCountCache",t.key),(v)=>` [已到达: ${v} 次]`) } />) } />,
+    
+    "RequiredFalseValues": r => <ULView header={`下列条件不成立`}  child={()=> Dict2Array(r!).map(t => <TextLabel  id={t.key} attachDescription={` = ${translateWord(t.value)} `}  />) } />,
    
   
     
@@ -180,7 +198,7 @@ export default function GameStateEligibleView(prop: GameStateEligible) {
     requestOrder.forEach(key => {
         const requires = prop[key];
         const handler = gameStateEligibleHalders[key]
-        if(requires && handler){         
+        if(requires !== undefined && requires != null && handler){         
             renderList.push(<li key={key}>{(handler as any)(requires)}</li>);
         }
     });
