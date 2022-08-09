@@ -37,6 +37,19 @@ export  function QuestLable({id,noLink,showId} : {id:string,noLink ?: boolean,sh
     )
 }
 
+
+export  function NpcLable({id,noLink,showId} : {id:string,noLink ?: boolean,showId ?: boolean}) {
+
+   
+    const textId = showId ? (" " + id + " ") : undefined;
+    return (
+        <span>
+           { noLink ? <span>{translateWord(id)}</span> : <Link to={"/Npcs/" + id} >{translateWord(id)}</Link> }
+           {textId}
+        </span>
+    )
+}
+
 export  function ConditionalItemLabel({id,noLink,showId} : {id:string,noLink ?: boolean,showId ?: boolean}) {
     const saveData = createSaveData(useContext(SaveDataContext));   
     const itemStatus = saveData?.getGameStateValue<string>("Cosmetics",id);

@@ -100,6 +100,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredOneOfTraits": r => <ULView header={`当前拥有以下任一祝福`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     "RequiredFalseSeenRooms": r => <ULView header={`本次逃脱行动未曾进入下列房间`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     "RequiredFalseRooms": r => <ULView header={`当前不在下列房间`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
+    "RequiredAnyEncountersThisRun": r => <ULView header={`本次逃脱行动曾经历以下任一遭遇`}  child={()=> r!.map(t => <TextLabel id={t}  />) } />,
     
    
     //TextRow

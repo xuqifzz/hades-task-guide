@@ -1,6 +1,6 @@
 import React from 'react';
-import { QuestOrderData, GiftOrderData, WeaponOrderData } from './data/GameData'
-import { QuestLable, GiftLable, WeaponLevel4UnlockLable } from './ViewComponents';
+import { QuestOrderData, GiftOrderData, WeaponOrderData, ConversationOrder } from './data/GameData'
+import { QuestLable, GiftLable, WeaponLevel4UnlockLable, NpcLable } from './ViewComponents';
 
 
 function QuestList() {
@@ -25,6 +25,13 @@ function QuestList() {
             <ul>
                 {
                     WeaponOrderData.map(w => <li key={w[0]} ><WeaponLevel4UnlockLable weaponId={w[0]} textLineId={w[1]} /></li>)
+                }
+            </ul>
+            <h2>NPC</h2>
+            <ul>
+                {
+                    
+                    ConversationOrder.map(w => <li key={w} ><NpcLable id={w} /></li>)
                 }
             </ul>
         </div>

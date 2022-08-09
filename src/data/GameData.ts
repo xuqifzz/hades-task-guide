@@ -5,6 +5,7 @@ import QuestOrderData from './QuestOrderData.json'
 import QuestData from './QuestData.json'
 import GiftData from './GiftData.json'
 import ConditionalItemData from './ConditionalItemData.json'
+import NPCs from './NPCs.json'
 import { Dict, Array2Dict, removeFormatSymbol } from './utils';
 
 export { QuestOrderData }
@@ -211,6 +212,7 @@ export interface GameStateEligible {
     RequiredOneOfTraits ?: string[],
     RequiredFalseSeenRooms?: string[],
     RequiredFalseRooms?: string[],
+    RequiredAnyEncountersThisRun ?: string[],
 
     RequiredKills ?: Dict<number>,
     RequiredMinItemInteractions ?: Dict<number>,
@@ -411,6 +413,53 @@ const conditionalItemData = ConditionalItemData as unknown as Dict<ConditionalIt
 export function getConditionalItem(id:string){
     return conditionalItemData[id];
 }
+
+//NPC
+interface Npc{
+    ActivateRequirements:GameStateEligible,
+    Name:string,
+    CanReceiveGift ?: boolean,
+    associateTextLines : string[]
+
+}
+
+const npcs = NPCs as unknown as Dict<Npc>;
+export const ConversationOrder =
+[
+	"NPC_Persephone_Home_01",
+	"NPC_Hades_01",
+	"NPC_Nyx_01",
+	"NPC_Dusa_01",
+	"NPC_Hypnos_01",
+	"NPC_Thanatos_01",
+	"NPC_FurySister_01",
+	"NPC_Achilles_01",
+	"NPC_Orpheus_01",
+	"NPC_Cerberus_01",
+	"NPC_Sisyphus_01",
+	"NPC_Eurydice_01",
+	"NPC_Patroclus_01",
+	"NPC_Skelly_01",
+	"NPC_Charon_01",
+	"NPC_Persephone_01",
+	"NPC_Thanatos_Field_01",
+	"NPC_Thanatos_Story_01",
+	"NPC_Hades_Story_01",
+	"NPC_FurySister_Story_01",
+	"NPC_Achilles_Story_01",
+	"NPC_Orpheus_Story_01",
+	"NPC_Cerberus_Field_01",
+	"NPC_Nyx_Story_01",
+	"NPC_Bouldy_01",
+	"NPC_3DGhostAlt",
+	"TrainingMelee",
+]
+
+export function getNpc(id:string){
+    return npcs[id];
+}
+
+
 
 
 
