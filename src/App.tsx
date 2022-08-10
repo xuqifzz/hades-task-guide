@@ -11,6 +11,7 @@ import { Github } from "styled-icons/fa-brands/Github";
 import {ForkButton} from './styled'
 import ConditionalItemView from './ConditionalItemView';
 import NpcView from './NpcView';
+import SaveData from './data/SaveData';
 
 
 
@@ -19,7 +20,7 @@ function App() {
   const [saveDataResult,SetSaveDataResult] = useState<FromSaveFileResult>(
     {
       isSuccess:false,
-      message:"未选择存档文件"
+      message:""
     }
   )
 

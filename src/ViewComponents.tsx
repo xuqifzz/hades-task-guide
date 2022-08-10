@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { SaveDataContext } from './context/SaveDataContext'
 import { FromSaveFileResult } from './lib/HadesSaveFile';
 import { Link } from 'react-router-dom'
 import SaveData from './data/SaveData';
-import {translateWord} from './data/GameData'
+import {translateWord,textLineDict} from './data/GameData'
 
 function createSaveData(r:FromSaveFileResult){
     return r.saveData ? new SaveData(r.saveData.luaState) : undefined
@@ -121,7 +121,33 @@ export function TextLabel({id,attachDescription, mark,linkPrefix} : {id:string,a
            {attachDescription}      
            {m}
     </span>;
-    
+}
 
+
+export function SaveDataStatusLabel({notCompleteTextline,refreshNextNotCompleteTextline,notCompleteTextlineCount}:{refreshNextNotCompleteTextline : ()=>void,notCompleteTextline?:string,notCompleteTextlineCount:number} ){
+
+   // const [notCompleteTextline,setNotCompleteTextline] = useState<string>();
+
+    // return r.saveData ? new SaveData(r.saveData.luaState) : undefined
+    const r = useContext(SaveDataContext);
+    if(!r.isSuccess && r.message === ""){
+        return <span>存档目录:文档\Saved Games\Hades, 其中1号存档名为Profile1.sav</span>
+    }
+    if(!r.isSuccess){
+        return <span>{`存档载入失败: ${r.message}`}</span>
+    }
+
+    const totalTextlineCount = Object.keys(textLineDict).length;
+  
+    let hasComplete = totalTextlineCount- notCompleteTextlineCount;
+    let percent = (hasComplete * 100 / totalTextlineCount).toFixed(2);
+
+
+
+
+    return <span>
+        <span>{`存档载入成功,已完成 ${percent}% 的对话 ( ${hasComplete}/${totalTextlineCount} )`}</span> &nbsp;
+        { notCompleteTextline ? <Link to={`/TextLines/${notCompleteTextline}`} onClick={refreshNextNotCompleteTextline} >随机跳转到一条未完成对话</Link>  : undefined}
+    </span>
 
 }

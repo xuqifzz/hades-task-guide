@@ -19,7 +19,7 @@ type SaveData={
 export type FromSaveFileResult = {
     isSuccess:boolean,
     message:string,
-    saveData ?:SaveData
+    saveData ?:SaveData,
 }
 
 class BufferReader{

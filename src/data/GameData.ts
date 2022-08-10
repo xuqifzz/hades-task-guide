@@ -267,11 +267,11 @@ interface TextLineExtra {
 }
 
 type TextLine = TextLineExtra & GameStateEligible
-const textLineDict = TextLineDict as unknown as Dict<TextLine>;
+export const textLineDict = TextLineDict as unknown as Dict<TextLine>;
 
 
 //CueTextDict
-const choiceDict: Dict<string> = {}
+export const choiceDict: Dict<string> = {}
 
 export interface ChoiceInfo {
     text: string,

@@ -1,5 +1,7 @@
 import { Dict, dictLength, KeysByValueType } from './utils'
 import CodexOrigin from './Codex.json' 
+import { choiceDict, textLineDict } from './GameData'
+
 const Codex = CodexOrigin as Dict<{Entries:Dict<any>,UnlockType:string,TitleText:string}>
 type RunHistory = {
     Cleared?: boolean
@@ -45,6 +47,24 @@ export default class SaveData {
 
     constructor(saveData: unknown) {
         this.saveData = saveData as SaveDataType;
+    
+    }
+
+    getNotCompleteTextLines(){
+        let notCompleteTextLines = [];
+        
+        let t2:Dict<boolean> = {};
+        console.log(this.saveData)
+        for(let k in this.saveData.TextLinesRecord){
+            let k2 = choiceDict[k] || k;
+            t2[k2] = this.saveData.TextLinesRecord[k];
+        }
+        for(let k in textLineDict){
+            if(! t2[k]){
+                notCompleteTextLines.push(k)
+            }
+        }
+        return notCompleteTextLines;
     }
 
     checkTextLineComplete(id: string) {
