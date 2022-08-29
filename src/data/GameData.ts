@@ -160,6 +160,7 @@ export interface GameStateEligible {
     RequiredActiveMetaPointsMin ?: number,
     RequiredRunsCleared ?: number,
     RequiredBossPhase ?: number,
+    RequiredMinTotalKills ?: number,
 
     AreIdsNotAlive ?: number[],
     AreIdsAlive ?: number[],

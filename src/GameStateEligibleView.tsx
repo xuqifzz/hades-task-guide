@@ -112,6 +112,7 @@ const gameStateEligibleHalders: GameStateEligibleHalders = {
     "RequiredMinUnlockedWeaponEnchantments": r => <TextRow  text={`至少解锁 ${r} 个武器形态`} remarkFun={s => `[已解锁 ${s.getNumUnlockedWeaponUpgrades()} 种]`}/>,
     "RequiredNumCosmeticsMin": r => <TextRow  text={`至少在承包商处购买 ${r} 项物品`} remarkFun={s => `[已购买 ${s.getGameStateDictLength("CosmeticsAdded")} 项]`}/>,
     "RequiredCodexEntriesMin": r => <TextRow  text={`至少在手稿种解锁 ${r} 个条目`} remarkFun={s => `[已解锁 ${s.calcNumCodexEntriesUnlocked()} 项]`}/>,
+    "RequiredMinTotalKills": r => <TextRow  text={`至少击败 ${r} 个敌人`} remarkFun={s => `[已击败 ${s.getGameState().TotalRequiredEnemyKills}]`}/>,
    
     //TextLines
     "RequiredTextLines": r => <TextLineList  header="需要达成以下所有对话" textLines={r!} />,

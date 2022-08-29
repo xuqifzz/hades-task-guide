@@ -26,6 +26,7 @@ type GameState = {
     ItemInteractions:Dict<number>,
     Cosmetics:Dict<string>
     LifetimeResourcesSpent:Dict<number>,
+    TotalRequiredEnemyKills:number,
 }
 
 type GameStateDictValue<T> = KeysByValueType<GameState, Dict<T>>
@@ -98,7 +99,10 @@ export default class SaveData {
     getWeaponLevel4Unlocks(id: string): number {
         const w = this.saveData.GameState.WeaponUnlocks[id];
         if (w) {
-            return w[3] || 0;
+            if(Array.isArray(w))
+                return w[3] || 0;
+            else
+                return w[4] || 0;
         }
         return 0;
     }
@@ -139,6 +143,10 @@ export default class SaveData {
             }
         }
 	    return unlockCount
+    }
+
+    getGameState(){
+        return this.saveData.GameState;
     }
 
 

@@ -50,7 +50,7 @@ export default function HeaderView(props: { onChangeSaveDataResult: (s: FromSave
     return (
         <div>
             <div className='logo-title-block'>
-                <Link className='logo-text' to={"/"}> Hadse 任务攻略 {" & "} 指引</Link>
+                <Link className='logo-text' to={"/"}> Hades 任务攻略 {" & "} 指引</Link>
                 <span>
                     Powered by: <a href='https://space.bilibili.com/15883813' target="_blank">艾加加</a> &nbsp; Q群:4557024
                 </span>
