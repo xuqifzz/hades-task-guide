@@ -1,6 +1,7 @@
 import { Dict, dictLength, KeysByValueType } from './utils'
 import CodexOrigin from './Codex.json' 
 import { choiceDict, textLineDict } from './GameData'
+import { waitForElementToBeRemoved } from '@testing-library/react'
 
 const Codex = CodexOrigin as Dict<{Entries:Dict<any>,UnlockType:string,TitleText:string}>
 type RunHistory = {
@@ -13,7 +14,7 @@ type GameState = {
     QuestStatus: Dict<QuestStatusValue>,
     Flags: Dict<boolean>,
     Gift: Dict<{ Value: number }>,
-    WeaponUnlocks: Dict<number[]>,
+    WeaponUnlocks: Dict<number[] | Dict<number>>,
     WeaponsUnlocked: Dict<boolean>,
     NPCInteractions: Dict<number>,
     TraitsTaken: Dict<boolean>,
@@ -111,9 +112,16 @@ export default class SaveData {
         let count = 0;
         for (let k in this.saveData.GameState.WeaponUnlocks) {
             let w = this.saveData.GameState.WeaponUnlocks[k];
-            for (let i = 1; i < w.length; i++) {
-                if (w[i] > 0) count++;
+            if(Array.isArray(w)) {
+                for (let i = 1; i < w.length; i++) {
+                    if (w[i] > 0) count++;
+                }
+            }else{
+                for(let i = 2; i <= 4 ; i++){
+                    if (w[i] > 0) count++;
+                }
             }
+
         }
         return count;
     }

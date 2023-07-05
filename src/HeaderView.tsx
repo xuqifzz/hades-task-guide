@@ -20,12 +20,32 @@ export default function HeaderView(props: { onChangeSaveDataResult: (s: FromSave
         }
     }
 
+    const sendFileForDebug =async () => {
+        if (inputEl.current && inputEl.current.files) {
+            const formData = new FormData();
+            formData.append(inputEl.current.files![0].name,inputEl.current.files![0]);
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+
+            const json = await response.json()
+            console.log(json)
+        }
+    
+    }
+
     const onFileChange = () => {
         const fr = new FileReader();
         fr.onload = () => {
             const buffer = Buffer.from(fr.result as string, "ascii");    
             const result = fromFile(buffer)          
             if(result.isSuccess && result.saveData){
+                if(false){
+                    //如果存档无法加载,可以将存档上传
+                    sendFileForDebug()
+                }
+               
                 const sd = new SaveData(result.saveData.luaState);
                 const ncs = sd.getNotCompleteTextLines()
                 setNotCompleteTextlines(ncs);
